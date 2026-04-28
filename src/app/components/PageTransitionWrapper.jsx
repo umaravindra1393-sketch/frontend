@@ -9,12 +9,12 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-orange-50"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-50"
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -42,7 +42,7 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
         {[...Array(5)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-3 h-3 bg-orange-500/30 rounded-full"
+            className="absolute w-3 h-3 bg-blue-500/30 rounded-full"
             style={{
               left: `${20 + i * 15}%`,
               top: `${30 + i * 10}%`,
@@ -69,7 +69,7 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
           <div className="relative">
             {/* Glow Effect */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur-2xl"
+              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl blur-2xl"
               animate={{
                 opacity: [0.3, 0.6, 0.3],
                 scale: [1, 1.2, 1],
@@ -82,7 +82,7 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
             />
             
             {/* Icon Container */}
-            <div className="relative bg-gradient-to-br from-orange-600 to-red-600 p-6 rounded-2xl shadow-2xl">
+            <div className="relative bg-gradient-to-br from-blue-600 to-red-600 p-6 rounded-2xl shadow-2xl">
               <motion.div
                 animate={{
                   rotate: [0, 360],
@@ -101,7 +101,7 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
             {[0, 120, 240].map((angle, i) => (
               <motion.div
                 key={i}
-                className="absolute w-2 h-2 bg-orange-500 rounded-full"
+                className="absolute w-2 h-2 bg-blue-500 rounded-full"
                 style={{
                   top: '50%',
                   left: '50%',
@@ -128,8 +128,8 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
 
         {/* Brand */}
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-            Zyndex
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+            Learnx
           </h1>
           <div className="flex items-center justify-center gap-2">
             <p className="text-slate-600 font-medium text-sm">{message}</p>
@@ -138,7 +138,7 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
               {[0, 1, 2].map((i) => (
                 <motion.div
                   key={i}
-                  className="w-1.5 h-1.5 bg-orange-600 rounded-full"
+                  className="w-1.5 h-1.5 bg-blue-600 rounded-full"
                   animate={{
                     scale: [1, 1.5, 1],
                     opacity: [0.3, 1, 0.3],
@@ -159,7 +159,7 @@ function TransitionLoader({ duration = 5000, message = 'Loading...' }) {
         <div className="w-56 mx-auto">
           <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-orange-600 to-red-600 rounded-full"
+              className="h-full bg-gradient-to-r from-blue-600 to-red-600 rounded-full"
               initial={{ width: '0%' }}
               animate={{ width: '100%' }}
               transition={{
@@ -218,14 +218,14 @@ export default function PageTransitionWrapper({ children, duration = 5000 }) {
     const isLoginTabSwitch = 
       previousPathRef.current !== null &&
       (
-        (previousPathRef.current.includes('/Zyndex/User/Log-In') && location.pathname.includes('/Zyndex/Admin/Log-In')) ||
-        (previousPathRef.current.includes('/Zyndex/Admin/Log-In') && location.pathname.includes('/Zyndex/User/Log-In')) ||
-        (previousPathRef.current.includes('/Zyndex/User/Sign-Up') && location.pathname.includes('/Zyndex/Admin/Sign-Up')) ||
-        (previousPathRef.current.includes('/Zyndex/Admin/Sign-Up') && location.pathname.includes('/Zyndex/User/Sign-Up')) ||
-        (previousPathRef.current.includes('/Zyndex/User/Log-In') && location.pathname.includes('/Zyndex/User/Sign-Up')) ||
-        (previousPathRef.current.includes('/Zyndex/User/Sign-Up') && location.pathname.includes('/Zyndex/User/Log-In')) ||
-        (previousPathRef.current.includes('/Zyndex/Admin/Log-In') && location.pathname.includes('/Zyndex/Admin/Sign-Up')) ||
-        (previousPathRef.current.includes('/Zyndex/Admin/Sign-Up') && location.pathname.includes('/Zyndex/Admin/Log-In'))
+        (previousPathRef.current.includes('/Learnx/User/Log-In') && location.pathname.includes('/Learnx/Admin/Log-In')) ||
+        (previousPathRef.current.includes('/Learnx/Admin/Log-In') && location.pathname.includes('/Learnx/User/Log-In')) ||
+        (previousPathRef.current.includes('/Learnx/User/Sign-Up') && location.pathname.includes('/Learnx/Admin/Sign-Up')) ||
+        (previousPathRef.current.includes('/Learnx/Admin/Sign-Up') && location.pathname.includes('/Learnx/User/Sign-Up')) ||
+        (previousPathRef.current.includes('/Learnx/User/Log-In') && location.pathname.includes('/Learnx/User/Sign-Up')) ||
+        (previousPathRef.current.includes('/Learnx/User/Sign-Up') && location.pathname.includes('/Learnx/User/Log-In')) ||
+        (previousPathRef.current.includes('/Learnx/Admin/Log-In') && location.pathname.includes('/Learnx/Admin/Sign-Up')) ||
+        (previousPathRef.current.includes('/Learnx/Admin/Sign-Up') && location.pathname.includes('/Learnx/Admin/Log-In'))
       );
 
     // Skip animation if we're just switching tabs on the login page
@@ -266,3 +266,5 @@ export default function PageTransitionWrapper({ children, duration = 5000 }) {
 
 // Export TransitionLoader for use in other components
 export { TransitionLoader };
+
+

@@ -15,12 +15,12 @@ function SubmissionLoader({ message }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-orange-50"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-50"
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -48,7 +48,7 @@ function SubmissionLoader({ message }) {
         {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"
+            className="absolute w-2 h-2 bg-gradient-to-r from-blue-500 to-red-500 rounded-full"
             style={{
               left: `${15 + i * 10}%`,
               top: `${25 + i * 8}%`,
@@ -76,7 +76,7 @@ function SubmissionLoader({ message }) {
           <div className="relative">
             {/* Glow Effect */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur-2xl"
+              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl blur-2xl"
               animate={{
                 opacity: [0.3, 0.6, 0.3],
                 scale: [1, 1.3, 1],
@@ -89,7 +89,7 @@ function SubmissionLoader({ message }) {
             />
             
             {/* Icon Container */}
-            <div className="relative bg-gradient-to-br from-orange-600 to-red-600 p-6 rounded-2xl shadow-2xl">
+            <div className="relative bg-gradient-to-br from-blue-600 to-red-600 p-6 rounded-2xl shadow-2xl">
               <motion.div
                 animate={{
                   rotate: [0, 360],
@@ -135,8 +135,8 @@ function SubmissionLoader({ message }) {
 
         {/* Brand */}
         <div className="space-y-3">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-            Zyndex
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+            Learnx
           </h1>
           <div className="space-y-2">
             <p className="text-slate-700 font-semibold text-base leading-relaxed">{message}</p>
@@ -147,7 +147,7 @@ function SubmissionLoader({ message }) {
                 {[0, 1, 2].map((i) => (
                   <motion.div
                     key={i}
-                    className="w-1.5 h-1.5 bg-orange-600 rounded-full"
+                    className="w-1.5 h-1.5 bg-blue-600 rounded-full"
                     animate={{
                       scale: [1, 1.5, 1],
                       opacity: [0.3, 1, 0.3],
@@ -233,7 +233,7 @@ export default function AdminRequest() {
         user_email: formData.email,
         user_password: formData.password,
         reply_to: formData.email,
-        to_name: 'Zyndex Admin',
+        to_name: 'Learnx Admin',
         subject: 'Admin Account Request',
         message: `New admin account request from ${formData.fullName} (${formData.email})`,
       };
@@ -280,7 +280,7 @@ export default function AdminRequest() {
 
   if (success) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-50/30 via-white to-orange-50/20 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20 flex items-center justify-center p-6">
         <motion.div
           className="max-w-md w-full"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -289,7 +289,7 @@ export default function AdminRequest() {
         >
           <div className="relative bg-white rounded-3xl shadow-2xl p-10 text-center overflow-hidden">
             <div className="absolute top-0 right-0 w-40 h-40 bg-green-100 rounded-full blur-3xl opacity-40" />
-            <div className="absolute bottom-0 left-0 w-40 h-40 bg-orange-100 rounded-full blur-3xl opacity-40" />
+            <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-40" />
             
             <div className="relative">
               <motion.div
@@ -320,12 +320,12 @@ export default function AdminRequest() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-amber-50">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-sky-50">
         <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] bg-[size:32px_32px]" />
         
         {/* Floating Orbs */}
         <motion.div
-          className="absolute top-20 left-20 w-72 h-72 bg-orange-400/20 rounded-full blur-3xl"
+          className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"
           animate={{
             x: [0, 100, 0],
             y: [0, -50, 0],
@@ -352,7 +352,7 @@ export default function AdminRequest() {
 
       {/* Header */}
       <motion.header 
-        className="relative z-10 py-6 px-8 backdrop-blur-sm border-b border-orange-200/50"
+        className="relative z-10 py-6 px-8 backdrop-blur-sm border-b border-blue-200/50"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
@@ -363,22 +363,22 @@ export default function AdminRequest() {
             whileHover={{ scale: 1.05 }}
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-orange-600/20 rounded-xl blur-xl" />
-              <div className="relative bg-gradient-to-br from-orange-600 to-red-600 p-2.5 rounded-xl shadow-lg">
+              <div className="absolute inset-0 bg-blue-600/20 rounded-xl blur-xl" />
+              <div className="relative bg-gradient-to-br from-blue-600 to-red-600 p-2.5 rounded-xl shadow-lg">
                 <BookOpen className="size-6 text-white" />
               </div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                Zyndex
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+                Learnx
               </h1>
               <p className="text-xs text-slate-500 font-medium">Educational Excellence</p>
             </div>
           </motion.div>
 
           <Link 
-            to="/Zyndex/Admin/Log-In"
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+            to="/Learnx/Admin/Log-In"
+            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
           >
             <ArrowLeft className="size-4" />
             Back to Login
@@ -396,12 +396,12 @@ export default function AdminRequest() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {/* Card Glow Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl blur-3xl opacity-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-3xl blur-3xl opacity-10" />
             
-            <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-orange-200/50 p-8 lg:p-10">
+            <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-blue-200/50 p-8 lg:p-10">
               {/* Icon */}
               <motion.div
-                className="size-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/30"
+                className="size-20 bg-gradient-to-br from-blue-500 to-red-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/30"
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ delay: 0.3, type: 'spring' }}
@@ -438,16 +438,16 @@ export default function AdminRequest() {
                     Full Name
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <User className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors" />
+                      <User className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
                       <input
                         type="text"
                         name="fullName"
                         value={formData.fullName}
                         onChange={handleChange}
                         placeholder="Enter your full name"
-                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all"
+                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all"
                         required
                       />
                     </div>
@@ -460,16 +460,16 @@ export default function AdminRequest() {
                     Display Name
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <Sparkles className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors" />
+                      <Sparkles className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
                       <input
                         type="text"
                         name="displayName"
                         value={formData.displayName}
                         onChange={handleChange}
                         placeholder="Enter your display name"
-                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all"
+                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all"
                         required
                       />
                     </div>
@@ -482,16 +482,16 @@ export default function AdminRequest() {
                     Email Address
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <Mail className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors" />
+                      <Mail className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
                       <input
                         type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="Enter your email"
-                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all"
+                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all"
                         required
                       />
                     </div>
@@ -504,16 +504,16 @@ export default function AdminRequest() {
                     Password
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <Lock className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors" />
+                      <Lock className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
                       <input
                         type="password"
                         name="password"
                         value={formData.password}
                         onChange={handleChange}
                         placeholder="Enter your password"
-                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all"
+                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all"
                         required
                       />
                     </div>
@@ -539,8 +539,8 @@ export default function AdminRequest() {
                   whileHover={{ scale: !sending ? 1.02 : 1 }}
                   whileTap={{ scale: !sending ? 0.98 : 1 }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-                  <div className="relative flex items-center justify-center gap-2 py-4 px-6 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg shadow-orange-600/30 disabled:opacity-50 disabled:cursor-not-allowed">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
+                  <div className="relative flex items-center justify-center gap-2 py-4 px-6 bg-gradient-to-r from-blue-600 to-red-600 text-white font-semibold rounded-xl shadow-lg shadow-blue-600/30 disabled:opacity-50 disabled:cursor-not-allowed">
                     {sending ? 'Sending Request...' : 'Submit Request'}
                   </div>
                 </motion.button>
@@ -551,20 +551,20 @@ export default function AdminRequest() {
       </div>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-orange-200/50 backdrop-blur-sm mt-auto">
+      <footer className="relative z-10 border-t border-blue-200/50 backdrop-blur-sm mt-auto">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p className="text-sm text-slate-600">
-              © 2026 Zyndex. All rights reserved.
+              © 2026 Learnx. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/Zyndex/Legal/Privacy" className="text-sm text-slate-600 hover:text-orange-600 transition-colors">
+              <Link to="/Learnx/Legal/Privacy" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
                 Privacy
               </Link>
-              <Link to="/Zyndex/Legal/Terms" className="text-sm text-slate-600 hover:text-orange-600 transition-colors">
+              <Link to="/Learnx/Legal/Terms" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
                 Terms
               </Link>
-              <Link to="/Zyndex/Support/FAQ" className="text-sm text-slate-600 hover:text-orange-600 transition-colors">
+              <Link to="/Learnx/Support/FAQ" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
                 FAQ
               </Link>
             </div>
@@ -579,3 +579,5 @@ export default function AdminRequest() {
     </div>
   );
 }
+
+

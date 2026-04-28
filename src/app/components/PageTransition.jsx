@@ -80,7 +80,7 @@ export default function PageTransition({ children, isTransitioning = false }) {
             {/* Brand */}
             <div className="space-y-2">
               <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                Zyndex
+                Learnx
               </h1>
               <p className="text-slate-600 font-medium text-sm">Loading...</p>
             </div>
@@ -106,3 +106,4 @@ export default function PageTransition({ children, isTransitioning = false }) {
     </>
   );
 }
+

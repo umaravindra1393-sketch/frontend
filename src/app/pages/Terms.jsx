@@ -10,7 +10,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Binding Agreement',
-          text: 'These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you", or "your") and Zyndex ("we", "us", or "our"). By accessing, browsing, or using the Zyndex educational resource library platform (the "Service" or "Platform"), you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.'
+          text: 'These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you", or "your") and Learnx ("we", "us", or "our"). By accessing, browsing, or using the Learnx educational resource library platform (the "Service" or "Platform"), you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.'
         },
         {
           subtitle: 'Acceptance by Use',
@@ -28,7 +28,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Key Terms',
-          text: '"Service" or "Platform" refers to the Zyndex educational resource library, including the website, mobile applications, and all related services, content, and features.\n\n"Content" means all educational resources, materials, documents, articles, books, videos, images, metadata, and other information available through the Service, whether provided by Zyndex, our partners, or users.\n\n"User" or "You" refers to any individual or entity that accesses or uses the Service, including visitors, registered users, contributors, and administrators.\n\n"Account" refers to the unique account you create to access certain features of the Service.\n\n"Subscription" refers to any paid plan or membership tier that grants access to premium features or content on the Platform.\n\n"User-Generated Content" or "UGC" means any content, including text, images, files, reviews, comments, or other materials that you upload, submit, or otherwise make available through the Service.'
+          text: '"Service" or "Platform" refers to the Learnx educational resource library, including the website, mobile applications, and all related services, content, and features.\n\n"Content" means all educational resources, materials, documents, articles, books, videos, images, metadata, and other information available through the Service, whether provided by Learnx, our partners, or users.\n\n"User" or "You" refers to any individual or entity that accesses or uses the Service, including visitors, registered users, contributors, and administrators.\n\n"Account" refers to the unique account you create to access certain features of the Service.\n\n"Subscription" refers to any paid plan or membership tier that grants access to premium features or content on the Platform.\n\n"User-Generated Content" or "UGC" means any content, including text, images, files, reviews, comments, or other materials that you upload, submit, or otherwise make available through the Service.'
         }
       ]
     },
@@ -46,7 +46,7 @@ export default function Terms() {
         },
         {
           subtitle: 'Account Responsibility',
-          text: 'You are solely responsible for maintaining the confidentiality of your account credentials, including your username and password. You agree to: (a) immediately notify us of any unauthorized use of your account, (b) ensure that you log out from your account at the end of each session, (c) not share your account with others, and (d) accept responsibility for all activities that occur under your account. Zyndex will not be liable for any loss or damage arising from your failure to comply with this obligation.'
+          text: 'You are solely responsible for maintaining the confidentiality of your account credentials, including your username and password. You agree to: (a) immediately notify us of any unauthorized use of your account, (b) ensure that you log out from your account at the end of each session, (c) not share your account with others, and (d) accept responsibility for all activities that occur under your account. Learnx will not be liable for any loss or damage arising from your failure to comply with this obligation.'
         }
       ]
     },
@@ -55,8 +55,8 @@ export default function Terms() {
       title: '4. Description of Service',
       content: [
         {
-          subtitle: 'What Zyndex Provides',
-          text: 'Zyndex provides an online educational resource library that offers access to a curated collection of academic materials, including:\n\n• Searchable database of educational content across multiple subjects\n• Online reading and viewing capabilities\n• Download functionality (where permitted)\n• Bookmarking and note-taking features\n• Personalized recommendations based on your interests\n• Community features including reviews and ratings\n• Administrative tools for content management (for authorized users)'
+          subtitle: 'What Learnx Provides',
+          text: 'Learnx provides an online educational resource library that offers access to a curated collection of academic materials, including:\n\n• Searchable database of educational content across multiple subjects\n• Online reading and viewing capabilities\n• Download functionality (where permitted)\n• Bookmarking and note-taking features\n• Personalized recommendations based on your interests\n• Community features including reviews and ratings\n• Administrative tools for content management (for authorized users)'
         },
         {
           subtitle: 'Subscription Tiers',
@@ -74,11 +74,11 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Ownership of Content',
-          text: 'All Content available through the Service, including but not limited to educational resources, books, articles, videos, images, software, code, metadata, text, graphics, logos, button icons, and the compilation thereof (the "Zyndex Content"), is the property of Zyndex, our licensors, content partners, or users who have uploaded such content. The Zyndex Content is protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property laws.'
+          text: 'All Content available through the Service, including but not limited to educational resources, books, articles, videos, images, software, code, metadata, text, graphics, logos, button icons, and the compilation thereof (the "Learnx Content"), is the property of Learnx, our licensors, content partners, or users who have uploaded such content. The Learnx Content is protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property laws.'
         },
         {
           subtitle: 'License Granted to Users',
-          text: 'Subject to your compliance with these Terms and applicable law, Zyndex grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to:\n\n• Access and view Content through the Service for your personal, non-commercial, educational use only\n• Download Content where explicitly permitted by the Content provider or subscription tier\n• Create bookmarks, highlights, and personal notes on Content\n\nThis license does not include any right to: (a) resale, redistribution, or commercial use of the Service or Content; (b) collection and use of any product listings, descriptions, or prices; (c) derivative use of the Service or Content; (d) downloading or copying of account information; or (e) use of data mining, robots, or similar data gathering and extraction tools.'
+          text: 'Subject to your compliance with these Terms and applicable law, Learnx grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to:\n\n• Access and view Content through the Service for your personal, non-commercial, educational use only\n• Download Content where explicitly permitted by the Content provider or subscription tier\n• Create bookmarks, highlights, and personal notes on Content\n\nThis license does not include any right to: (a) resale, redistribution, or commercial use of the Service or Content; (b) collection and use of any product listings, descriptions, or prices; (c) derivative use of the Service or Content; (d) downloading or copying of account information; or (e) use of data mining, robots, or similar data gathering and extraction tools.'
         },
         {
           subtitle: 'Restrictions - No Redistribution or Resale',
@@ -128,7 +128,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Pricing Model',
-          text: 'Zyndex offers various subscription plans with different features and pricing tiers. Current pricing information is available on our pricing page. We reserve the right to change our fees and pricing at any time with at least 30 days\' notice for existing subscribers.'
+          text: 'Learnx offers various subscription plans with different features and pricing tiers. Current pricing information is available on our pricing page. We reserve the right to change our fees and pricing at any time with at least 30 days\' notice for existing subscribers.'
         },
         {
           subtitle: 'Billing Cycle',
@@ -158,7 +158,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'When We May Suspend or Terminate Accounts',
-          text: 'We reserve the right to suspend or terminate your account and access to the Service immediately, without prior notice or liability, for any reason, including but not limited to:\n\n• Violation of these Terms of Service\n• Infringement of intellectual property rights\n• Fraudulent, abusive, or illegal activity\n• Non-payment of subscription fees\n• Sharing account credentials or excessive account sharing\n• Harassment or abuse of other users or Zyndex staff\n• Use of automated systems to access the Service\n• Any conduct that we believe, in our sole discretion, is harmful to other users, Zyndex, or third parties'
+          text: 'We reserve the right to suspend or terminate your account and access to the Service immediately, without prior notice or liability, for any reason, including but not limited to:\n\n• Violation of these Terms of Service\n• Infringement of intellectual property rights\n• Fraudulent, abusive, or illegal activity\n• Non-payment of subscription fees\n• Sharing account credentials or excessive account sharing\n• Harassment or abuse of other users or Learnx staff\n• Use of automated systems to access the Service\n• Any conduct that we believe, in our sole discretion, is harmful to other users, Learnx, or third parties'
         },
         {
           subtitle: 'User-Initiated Termination',
@@ -176,15 +176,15 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Content Publishers & Partners',
-          text: 'Zyndex aggregates educational content from various publishers, authors, educational institutions, and content partners. While we strive to work only with reputable sources, we do not guarantee the accuracy, completeness, or quality of third-party content. Your use of third-party content may be subject to additional terms and licenses imposed by the content owner.'
+          text: 'Learnx aggregates educational content from various publishers, authors, educational institutions, and content partners. While we strive to work only with reputable sources, we do not guarantee the accuracy, completeness, or quality of third-party content. Your use of third-party content may be subject to additional terms and licenses imposed by the content owner.'
         },
         {
           subtitle: 'External Links',
-          text: 'The Service may contain links to third-party websites, services, or resources. These links are provided for your convenience only. Zyndex does not endorse and is not responsible for:\n\n• The content, products, or services offered by third-party sites\n• The privacy practices of external websites\n• Any damage or loss caused by your use of third-party sites\n\nYour use of third-party websites is at your own risk and subject to the terms and conditions of those sites.'
+          text: 'The Service may contain links to third-party websites, services, or resources. These links are provided for your convenience only. Learnx does not endorse and is not responsible for:\n\n• The content, products, or services offered by third-party sites\n• The privacy practices of external websites\n• Any damage or loss caused by your use of third-party sites\n\nYour use of third-party websites is at your own risk and subject to the terms and conditions of those sites.'
         },
         {
           subtitle: 'No Responsibility Disclaimer',
-          text: 'Zyndex expressly disclaims any responsibility or liability for third-party content, services, or websites. We do not monitor, verify, or control third-party content and make no representations or warranties regarding such content.'
+          text: 'Learnx expressly disclaims any responsibility or liability for third-party content, services, or websites. We do not monitor, verify, or control third-party content and make no representations or warranties regarding such content.'
         }
       ]
     },
@@ -230,7 +230,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Your Responsibility',
-          text: 'You agree to indemnify, defend, and hold harmless Zyndex, its parent company, subsidiaries, affiliates, officers, directors, employees, agents, licensors, and service providers from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys\' fees) arising from or relating to:\n\n• Your violation of these Terms of Service\n• Your violation of any law or regulation\n• Your violation of any rights of a third party, including intellectual property rights\n• Your use or misuse of the Service\n• Your User-Generated Content\n• Your account credentials being used by another person (whether authorized or unauthorized)\n\nThis indemnification obligation will survive termination of your account and these Terms.'
+          text: 'You agree to indemnify, defend, and hold harmless Learnx, its parent company, subsidiaries, affiliates, officers, directors, employees, agents, licensors, and service providers from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys\' fees) arising from or relating to:\n\n• Your violation of these Terms of Service\n• Your violation of any law or regulation\n• Your violation of any rights of a third party, including intellectual property rights\n• Your use or misuse of the Service\n• Your User-Generated Content\n• Your account credentials being used by another person (whether authorized or unauthorized)\n\nThis indemnification obligation will survive termination of your account and these Terms.'
         }
       ]
     },
@@ -258,7 +258,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Right to Modify',
-          text: 'Zyndex reserves the right to modify, update, or replace these Terms at any time in our sole discretion. We will make reasonable efforts to notify users of material changes.'
+          text: 'Learnx reserves the right to modify, update, or replace these Terms at any time in our sole discretion. We will make reasonable efforts to notify users of material changes.'
         },
         {
           subtitle: 'Notification Method',
@@ -276,7 +276,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Entire Agreement',
-          text: 'These Terms, together with our Privacy Policy and any other policies referenced herein, constitute the entire agreement between you and Zyndex regarding the Service and supersede all prior agreements and understandings.'
+          text: 'These Terms, together with our Privacy Policy and any other policies referenced herein, constitute the entire agreement between you and Learnx regarding the Service and supersede all prior agreements and understandings.'
         },
         {
           subtitle: 'Severability',
@@ -288,11 +288,11 @@ export default function Terms() {
         },
         {
           subtitle: 'Assignment',
-          text: 'You may not assign or transfer these Terms or your account without our prior written consent. Zyndex may assign or transfer these Terms at any time without restriction.'
+          text: 'You may not assign or transfer these Terms or your account without our prior written consent. Learnx may assign or transfer these Terms at any time without restriction.'
         },
         {
           subtitle: 'Force Majeure',
-          text: 'Zyndex shall not be liable for any failure to perform due to causes beyond its reasonable control, including acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation facilities, fuel, energy, labor, or materials.'
+          text: 'Learnx shall not be liable for any failure to perform due to causes beyond its reasonable control, including acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation facilities, fuel, energy, labor, or materials.'
         }
       ]
     },
@@ -302,7 +302,7 @@ export default function Terms() {
       content: [
         {
           subtitle: 'Support & Legal Inquiries',
-          text: 'For questions, concerns, or legal inquiries regarding these Terms of Service, please contact us at:\n\nZyndex Support Team\nEmail: lmno1432@gmail.com\nSubject Line: Terms of Service Inquiry\n\nFor urgent legal matters, please mark your communication as "URGENT: Legal Matter" in the subject line.\n\nWe will respond to your inquiry within 5-7 business days.'
+          text: 'For questions, concerns, or legal inquiries regarding these Terms of Service, please contact us at:\n\nLearnx Support Team\nEmail: lmno1432@gmail.com\nSubject Line: Terms of Service Inquiry\n\nFor urgent legal matters, please mark your communication as "URGENT: Legal Matter" in the subject line.\n\nWe will respond to your inquiry within 5-7 business days.'
         }
       ]
     }
@@ -310,7 +310,7 @@ export default function Terms() {
 
   return (
     <PublicLayout>
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-amber-50 py-16 px-6">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-sky-50 py-16 px-6">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <motion.div
@@ -319,16 +319,16 @@ export default function Terms() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center justify-center size-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-lg mb-6">
+            <div className="inline-flex items-center justify-center size-20 bg-gradient-to-br from-blue-500 to-red-600 rounded-2xl shadow-lg mb-6">
               <Scale className="size-10 text-white" />
             </div>
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
+            <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent mb-4">
               Terms of Service
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These terms govern your use of the Zyndex educational resource library. Please read carefully before using our services.
+              These terms govern your use of the Learnx educational resource library. Please read carefully before using our services.
             </p>
-            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
+            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
               <FileText className="size-4" />
               Last Updated: January 28, 2026
             </div>
@@ -339,7 +339,7 @@ export default function Terms() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-gradient-to-r from-red-500 to-orange-600 rounded-2xl p-8 mb-12 text-white shadow-xl"
+            className="bg-gradient-to-r from-red-500 to-blue-600 rounded-2xl p-8 mb-12 text-white shadow-xl"
           >
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
@@ -348,7 +348,7 @@ export default function Terms() {
               <div>
                 <h3 className="text-2xl font-bold mb-3">Important Legal Agreement</h3>
                 <p className="text-red-50 leading-relaxed">
-                  By using Zyndex, you agree to be legally bound by these Terms of Service. These terms contain important 
+                  By using Learnx, you agree to be legally bound by these Terms of Service. These terms contain important 
                   information about your rights and obligations, including limitations of liability and dispute resolution 
                   procedures. If you do not agree with these terms, you must not use the Service.
                 </p>
@@ -366,9 +366,9 @@ export default function Terms() {
                 transition={{ duration: 0.5, delay: 0.05 * index }}
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="bg-gradient-to-r from-orange-50 to-amber-50 px-8 py-6">
+                <div className="bg-gradient-to-r from-blue-50 to-sky-50 px-8 py-6">
                   <div className="flex items-center gap-4">
-                    <div className="flex-shrink-0 size-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-md">
+                    <div className="flex-shrink-0 size-12 bg-gradient-to-br from-blue-500 to-red-600 rounded-xl flex items-center justify-center shadow-md">
                       <section.icon className="size-6 text-white" />
                     </div>
                     <h2 className="text-2xl font-bold text-gray-900">{section.title}</h2>
@@ -378,7 +378,7 @@ export default function Terms() {
                   {section.content.map((item, idx) => (
                     <div key={idx} className="space-y-3">
                       {item.subtitle && (
-                        <h3 className="text-lg font-semibold text-orange-600">{item.subtitle}</h3>
+                        <h3 className="text-lg font-semibold text-blue-600">{item.subtitle}</h3>
                       )}
                       <p className="text-gray-700 leading-relaxed whitespace-pre-line">{item.text}</p>
                     </div>
@@ -393,16 +393,16 @@ export default function Terms() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-10 text-center text-white shadow-2xl"
+            className="mt-16 bg-gradient-to-r from-blue-500 to-red-600 rounded-2xl p-10 text-center text-white shadow-2xl"
           >
             <Mail className="size-16 mx-auto mb-6" />
             <h2 className="text-3xl font-bold mb-4">Questions About These Terms?</h2>
-            <p className="text-orange-50 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-blue-50 text-lg mb-8 max-w-2xl mx-auto">
               If you have any questions or concerns about these Terms of Service, please don't hesitate to contact our support team.
             </p>
             <a
               href="mailto:lmno1432@gmail.com?subject=Terms%20of%20Service%20Inquiry"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-orange-600 rounded-xl font-semibold hover:bg-orange-50 transition-all shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl"
             >
               <Mail className="size-5" />
               Contact Support Team
@@ -413,3 +413,4 @@ export default function Terms() {
     </PublicLayout>
   );
 }
+

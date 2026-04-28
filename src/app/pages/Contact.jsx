@@ -15,12 +15,12 @@ function SubmissionLoader({ message }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-orange-50"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-50"
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -48,7 +48,7 @@ function SubmissionLoader({ message }) {
         {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"
+            className="absolute w-2 h-2 bg-gradient-to-r from-blue-500 to-red-500 rounded-full"
             style={{
               left: `${15 + i * 10}%`,
               top: `${25 + i * 8}%`,
@@ -76,7 +76,7 @@ function SubmissionLoader({ message }) {
           <div className="relative">
             {/* Glow Effect */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur-2xl"
+              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl blur-2xl"
               animate={{
                 opacity: [0.3, 0.6, 0.3],
                 scale: [1, 1.3, 1],
@@ -89,7 +89,7 @@ function SubmissionLoader({ message }) {
             />
             
             {/* Icon Container */}
-            <div className="relative bg-gradient-to-br from-orange-600 to-red-600 p-6 rounded-2xl shadow-2xl">
+            <div className="relative bg-gradient-to-br from-blue-600 to-red-600 p-6 rounded-2xl shadow-2xl">
               <motion.div
                 animate={{
                   rotate: [0, 360],
@@ -135,8 +135,8 @@ function SubmissionLoader({ message }) {
 
         {/* Brand */}
         <div className="space-y-3">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-            Zyndex
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+            Learnx
           </h1>
           <div className="space-y-2">
             <p className="text-slate-700 font-semibold text-base leading-relaxed">{message}</p>
@@ -147,7 +147,7 @@ function SubmissionLoader({ message }) {
                 {[0, 1, 2].map((i) => (
                   <motion.div
                     key={i}
-                    className="w-1.5 h-1.5 bg-orange-600 rounded-full"
+                    className="w-1.5 h-1.5 bg-blue-600 rounded-full"
                     animate={{
                       scale: [1, 1.5, 1],
                       opacity: [0.3, 1, 0.3],
@@ -169,7 +169,7 @@ function SubmissionLoader({ message }) {
         <div className="w-64 mx-auto">
           <div className="h-2 bg-slate-200 rounded-full overflow-hidden shadow-inner">
             <motion.div
-              className="h-full bg-gradient-to-r from-orange-600 via-red-500 to-orange-600 rounded-full"
+              className="h-full bg-gradient-to-r from-blue-600 via-red-500 to-blue-600 rounded-full"
               initial={{ width: '0%' }}
               animate={{ width: '100%' }}
               transition={{
@@ -261,7 +261,7 @@ export default function Contact() {
         '2400030999@kluniversity.in',
         '2400030983@kluniversity.in'
       ],
-      gradient: 'from-orange-500 to-orange-600',
+      gradient: 'from-blue-500 to-blue-600',
       shadowColor: 'orange'
     },
     {
@@ -271,7 +271,7 @@ export default function Contact() {
         '+91 8897337687',
         'Mon-Fri, 9AM-5PM IST'
       ],
-      gradient: 'from-amber-500 to-orange-600',
+      gradient: 'from-sky-500 to-blue-600',
       shadowColor: 'amber'
     },
     {
@@ -281,18 +281,18 @@ export default function Contact() {
         'KL University',
         'Vijayawada'
       ],
-      gradient: 'from-red-500 to-orange-600',
+      gradient: 'from-red-500 to-blue-600',
       shadowColor: 'red'
     }
   ];
 
   return (
     <PublicLayout>
-      <div className="py-24 px-6 min-h-screen bg-gradient-to-br from-slate-50 via-white to-orange-50/30 relative overflow-hidden">
+      <div className="py-24 px-6 min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
-            className="absolute top-20 right-20 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl"
+            className="absolute top-20 right-20 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"
             animate={{
               scale: [1, 1.3, 1],
               opacity: [0.3, 0.5, 0.3],
@@ -327,7 +327,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 backdrop-blur-xl border border-orange-200/50 rounded-full text-sm font-semibold mb-8 shadow-lg shadow-orange-100/50"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 backdrop-blur-xl border border-blue-200/50 rounded-full text-sm font-semibold mb-8 shadow-lg shadow-blue-100/50"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
@@ -335,8 +335,8 @@ export default function Contact() {
                 boxShadow: '0 4px 24px -8px rgba(249, 115, 22, 0.25), 0 0 0 1px rgba(249, 115, 22, 0.1) inset'
               }}
             >
-              <MessageCircle className="size-4 text-orange-600" />
-              <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              <MessageCircle className="size-4 text-blue-600" />
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Contact Us
               </span>
             </motion.div>
@@ -347,7 +347,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <span className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 bg-clip-text text-transparent"
+              <span className="bg-gradient-to-r from-blue-600 via-red-600 to-blue-600 bg-clip-text text-transparent"
                 style={{ textShadow: '0 2px 40px rgba(249, 115, 22, 0.1)' }}
               >
                 Get in Touch
@@ -374,7 +374,7 @@ export default function Contact() {
                 boxShadow: '0 25px 70px -20px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.5) inset'
               }}
             >
-              <div className="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-orange-400/20 to-transparent rounded-full blur-3xl" />
+              <div className="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-blue-400/20 to-transparent rounded-full blur-3xl" />
               
               <div className="relative">
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
@@ -388,7 +388,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Your name"
-                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
+                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
                       style={{
                         boxShadow: '0 2px 8px -2px rgba(0, 0, 0, 0.05)'
                       }}
@@ -404,7 +404,7 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="your@email.com"
-                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
+                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
                       style={{
                         boxShadow: '0 2px 8px -2px rgba(0, 0, 0, 0.05)'
                       }}
@@ -420,7 +420,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       placeholder="What's this about?"
-                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
+                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
                       style={{
                         boxShadow: '0 2px 8px -2px rgba(0, 0, 0, 0.05)'
                       }}
@@ -436,7 +436,7 @@ export default function Contact() {
                       onChange={handleChange}
                       placeholder="Your message..."
                       rows={5}
-                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none shadow-sm hover:shadow-md"
+                      className="w-full px-5 py-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none shadow-sm hover:shadow-md"
                       style={{
                         boxShadow: '0 2px 8px -2px rgba(0, 0, 0, 0.05)'
                       }}
@@ -447,7 +447,7 @@ export default function Contact() {
                   <motion.button
                     type="submit"
                     disabled={sending}
-                    className="w-full py-5 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-2xl font-semibold flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 transition-all"
+                    className="w-full py-5 bg-gradient-to-r from-blue-600 to-red-600 text-white rounded-2xl font-semibold flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 transition-all"
                     whileHover={{ scale: sending ? 1 : 1.02, y: sending ? 0 : -2 }}
                     whileTap={{ scale: sending ? 1 : 0.98 }}
                     style={{
@@ -531,7 +531,7 @@ export default function Contact() {
               </motion.div>
 
               <motion.div 
-                className="relative bg-gradient-to-br from-orange-50/80 to-amber-50/80 backdrop-blur-xl rounded-3xl p-10 overflow-hidden border border-orange-100/50"
+                className="relative bg-gradient-to-br from-blue-50/80 to-sky-50/80 backdrop-blur-xl rounded-3xl p-10 overflow-hidden border border-blue-100/50"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
@@ -543,7 +543,7 @@ export default function Contact() {
                 
                 <div className="relative flex gap-5">
                   <motion.div 
-                    className="size-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-2xl shadow-orange-500/40"
+                    className="size-14 bg-gradient-to-br from-blue-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-2xl shadow-blue-500/40"
                     whileHover={{ scale: 1.1, rotate: -5 }}
                     transition={{ type: "spring", stiffness: 300 }}
                     style={{
@@ -573,3 +573,5 @@ export default function Contact() {
     </PublicLayout>
   );
 }
+
+

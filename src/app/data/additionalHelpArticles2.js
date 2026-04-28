@@ -1,4 +1,4 @@
-// Additional 20 Help Articles for Zyndex (Articles 81-100)
+// Additional 20 Help Articles for Learnx (Articles 81-100)
 export const additionalHelpArticles2 = [
   // Privacy & Legal (10 articles)
   {
@@ -9,7 +9,7 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Privacy Policy Overview</h2>
-        <p class="article-intro">Zyndex is committed to protecting your privacy and personal information.</p>
+        <p class="article-intro">Learnx is committed to protecting your privacy and personal information.</p>
         
         <div class="section-block">
           <h3 class="section-heading">What We Collect:</h3>
@@ -42,7 +42,7 @@ export const additionalHelpArticles2 = [
 
         <div class="tip-box">
           <h4 class="tip-heading">📄 Full Policy:</h4>
-          <p>Read our complete Privacy Policy at /Zyndex/Legal/Privacy</p>
+          <p>Read our complete Privacy Policy at /Learnx/Legal/Privacy</p>
         </div>
       </div>
     `,
@@ -57,7 +57,7 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Terms of Service Summary</h2>
-        <p class="article-intro">By using Zyndex, you agree to our Terms of Service.</p>
+        <p class="article-intro">By using Learnx, you agree to our Terms of Service.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Key Terms:</h3>
@@ -96,7 +96,7 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Copyright Guidelines</h2>
-        <p class="article-intro">Zyndex respects intellectual property rights and expects users to do the same.</p>
+        <p class="article-intro">Learnx respects intellectual property rights and expects users to do the same.</p>
         
         <div class="section-block">
           <h3 class="section-heading">For Admins Uploading:</h3>
@@ -120,7 +120,7 @@ export const additionalHelpArticles2 = [
 
         <div class="section-block">
           <h3 class="section-heading">Reporting Copyright Violations:</h3>
-          <p>If you believe content violates copyright, contact us immediately at legal@zyndex.com with details.</p>
+          <p>If you believe content violates copyright, contact us immediately at legal@learnx.com with details.</p>
         </div>
       </div>
     `,
@@ -135,7 +135,7 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Data Retention Policy</h2>
-        <p class="article-intro">Understanding how long Zyndex retains your personal information.</p>
+        <p class="article-intro">Understanding how long Learnx retains your personal information.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Retention Periods:</h3>
@@ -150,7 +150,7 @@ export const additionalHelpArticles2 = [
         <div class="section-block">
           <h3 class="section-heading">Request Data Deletion:</h3>
           <ol class="article-list">
-            <li>Contact support at privacy@zyndex.com</li>
+            <li>Contact support at privacy@learnx.com</li>
             <li>Provide your registered email</li>
             <li>Verification may be required</li>
             <li>Data deleted within 30 days</li>
@@ -165,11 +165,11 @@ export const additionalHelpArticles2 = [
     id: 85,
     category: 'Privacy & Legal',
     title: 'Cookie usage and tracking',
-    description: 'How Zyndex uses cookies',
+    description: 'How Learnx uses cookies',
     content: `
       <div class="article-content">
         <h2 class="article-heading">Cookie Policy</h2>
-        <p class="article-intro">Zyndex uses cookies to enhance your experience and maintain functionality.</p>
+        <p class="article-intro">Learnx uses cookies to enhance your experience and maintain functionality.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Types of Cookies We Use:</h3>
@@ -191,7 +191,7 @@ export const additionalHelpArticles2 = [
 
         <div class="warning-box">
           <h4 class="warning-heading">⚠️ Note:</h4>
-          <p>Disabling cookies may affect Zyndex functionality, including the ability to log in.</p>
+          <p>Disabling cookies may affect Learnx functionality, including the ability to log in.</p>
         </div>
       </div>
     `,
@@ -202,11 +202,11 @@ export const additionalHelpArticles2 = [
     id: 86,
     category: 'Privacy & Legal',
     title: 'Third-party services and integrations',
-    description: 'External services Zyndex uses',
+    description: 'External services Learnx uses',
     content: `
       <div class="article-content">
         <h2 class="article-heading">Third-Party Services</h2>
-        <p class="article-intro">Zyndex integrates with select third-party services to enhance functionality.</p>
+        <p class="article-intro">Learnx integrates with select third-party services to enhance functionality.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Services We Use:</h3>
@@ -239,7 +239,7 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Data Protection Compliance</h2>
-        <p class="article-intro">Zyndex complies with GDPR (Europe) and CCPA (California) data protection regulations.</p>
+        <p class="article-intro">Learnx complies with GDPR (Europe) and CCPA (California) data protection regulations.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Your Rights Under GDPR/CCPA:</h3>
@@ -254,7 +254,7 @@ export const additionalHelpArticles2 = [
 
         <div class="section-block">
           <h3 class="section-heading">Exercising Your Rights:</h3>
-          <p>Contact privacy@zyndex.com with your request. We'll respond within 30 days.</p>
+          <p>Contact privacy@learnx.com with your request. We'll respond within 30 days.</p>
         </div>
       </div>
     `,
@@ -317,7 +317,7 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Data Security</h2>
-        <p class="article-intro">Zyndex employs industry-standard security measures to protect your information.</p>
+        <p class="article-intro">Learnx employs industry-standard security measures to protect your information.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Security Measures:</h3>
@@ -352,12 +352,12 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Security Vulnerability Reporting</h2>
-        <p class="article-intro">Help us keep Zyndex secure by reporting vulnerabilities responsibly.</p>
+        <p class="article-intro">Help us keep Learnx secure by reporting vulnerabilities responsibly.</p>
         
         <div class="section-block">
           <h3 class="section-heading">How to Report:</h3>
           <ol class="article-list">
-            <li>Email security@zyndex.com immediately</li>
+            <li>Email security@learnx.com immediately</li>
             <li>Include detailed description of the issue</li>
             <li>Provide steps to reproduce (if applicable)</li>
             <li>Do NOT exploit the vulnerability</li>
@@ -432,7 +432,7 @@ export const additionalHelpArticles2 = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Search Like a Pro</h2>
-        <p class="article-intro">Master Zyndex search to find exactly what you need quickly.</p>
+        <p class="article-intro">Master Learnx search to find exactly what you need quickly.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Search Best Practices:</h3>
@@ -478,7 +478,7 @@ export const additionalHelpArticles2 = [
             <li>Create folders by subject on your device</li>
             <li>Use descriptive filenames (rename after download)</li>
             <li>Organize by semester or unit</li>
-            <li>Keep a master folder for all Zyndex downloads</li>
+            <li>Keep a master folder for all Learnx downloads</li>
           </ul>
         </div>
 
@@ -486,7 +486,7 @@ export const additionalHelpArticles2 = [
           <h3 class="section-heading">Folder Structure Example:</h3>
           <div class="code-block">
             <pre>
-Zyndex Resources/
+Learnx Resources/
   ├── Science/
   │   ├── Biology/
   │   └── Chemistry/
@@ -550,12 +550,12 @@ Zyndex Resources/
   {
     id: 95,
     category: 'Tips & Best Practices',
-    title: 'Using Zyndex for classroom integration',
+    title: 'Using Learnx for classroom integration',
     description: 'Tips for educators',
     content: `
       <div class="article-content">
         <h2 class="article-heading">Classroom Integration Strategies</h2>
-        <p class="article-intro">Educators: Leverage Zyndex effectively in your teaching practice.</p>
+        <p class="article-intro">Educators: Leverage Learnx effectively in your teaching practice.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Preparation Strategies:</h3>
@@ -581,7 +581,7 @@ Zyndex Resources/
           <h3 class="section-heading">Student Access:</h3>
           <ul class="article-list">
             <li>Encourage students to create their own accounts</li>
-            <li>Teach research skills using Zyndex search</li>
+            <li>Teach research skills using Learnx search</li>
             <li>Promote self-directed learning</li>
           </ul>
         </div>
@@ -594,11 +594,11 @@ Zyndex Resources/
     id: 96,
     category: 'Tips & Best Practices',
     title: 'Accessibility features and tips',
-    description: 'Making Zyndex work for everyone',
+    description: 'Making Learnx work for everyone',
     content: `
       <div class="article-content">
         <h2 class="article-heading">Accessibility Features</h2>
-        <p class="article-intro">Zyndex is designed to be accessible to all users.</p>
+        <p class="article-intro">Learnx is designed to be accessible to all users.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Built-in Accessibility:</h3>
@@ -646,14 +646,14 @@ Zyndex Resources/
             <li>Create department-wide resource lists</li>
             <li>Coordinate uploads if multiple teachers have admin access</li>
             <li>Review and recommend resources to each other</li>
-            <li>Build unit plans together using Zyndex materials</li>
+            <li>Build unit plans together using Learnx materials</li>
           </ul>
         </div>
 
         <div class="section-block">
           <h3 class="section-heading">Team Meetings:</h3>
           <ul class="article-list">
-            <li>Discuss valuable resources found on Zyndex</li>
+            <li>Discuss valuable resources found on Learnx</li>
             <li>Share success stories from classroom use</li>
             <li>Identify gaps and request needed content</li>
           </ul>
@@ -671,7 +671,7 @@ Zyndex Resources/
     content: `
       <div class="article-content">
         <h2 class="article-heading">Discovering New Content</h2>
-        <p class="article-intro">Stay current with the latest educational resources on Zyndex.</p>
+        <p class="article-intro">Stay current with the latest educational resources on Learnx.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Discovery Strategies:</h3>
@@ -695,7 +695,7 @@ Zyndex Resources/
 
         <div class="tip-box">
           <h4 class="tip-heading">💡 Stay Fresh:</h4>
-          <p>Set a reminder to explore Zyndex for 10 minutes each week to discover new treasures.</p>
+          <p>Set a reminder to explore Learnx for 10 minutes each week to discover new treasures.</p>
         </div>
       </div>
     `,
@@ -710,7 +710,7 @@ Zyndex Resources/
     content: `
       <div class="article-content">
         <h2 class="article-heading">Effective Feedback</h2>
-        <p class="article-intro">Help improve Zyndex by providing thoughtful, constructive feedback.</p>
+        <p class="article-intro">Help improve Learnx by providing thoughtful, constructive feedback.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Good Feedback Includes:</h3>
@@ -745,12 +745,12 @@ Zyndex Resources/
   {
     id: 100,
     category: 'Tips & Best Practices',
-    title: 'Maximizing productivity on Zyndex',
+    title: 'Maximizing productivity on Learnx',
     description: 'Workflow optimization tips',
     content: `
       <div class="article-content">
         <h2 class="article-heading">Productivity Optimization</h2>
-        <p class="article-intro">Get the most out of Zyndex with these efficiency strategies.</p>
+        <p class="article-intro">Get the most out of Learnx with these efficiency strategies.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Workflow Tips:</h3>
@@ -758,7 +758,7 @@ Zyndex Resources/
             <li>Use specific searches to save time</li>
             <li>Favorite immediately when you find good resources</li>
             <li>Download resources in batches for offline access</li>
-            <li>Bookmark Zyndex for quick access</li>
+            <li>Bookmark Learnx for quick access</li>
             <li>Learn keyboard shortcuts</li>
           </ul>
         </div>
@@ -793,3 +793,4 @@ Zyndex Resources/
     readTime: '4 min read'
   },
 ];
+

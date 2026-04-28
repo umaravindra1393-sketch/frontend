@@ -39,12 +39,12 @@ export default function AdminProfile() {
 
         <div className="grid lg:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl shadow-md p-6 text-center">
-            <div className="size-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-3xl font-semibold mx-auto mb-4">
+            <div className="size-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-semibold mx-auto mb-4">
               {profileData.name?.charAt(0)?.toUpperCase() || 'A'}
             </div>
             <h3 className="font-semibold text-gray-900 mb-1">{profileData.name}</h3>
             <p className="text-sm text-gray-500 mb-2">{profileData.email}</p>
-            <div className="inline-flex items-center gap-1 px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">
+            <div className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">
               <Shield className="size-3" />
               {profileData.role}
             </div>
@@ -59,10 +59,10 @@ export default function AdminProfile() {
                 {isEditing ? (
                   <>
                     <button type="button" onClick={() => setIsEditing(false)} className="flex items-center gap-2 px-6 py-3 bg-gray-200 rounded-lg font-medium"><X className="size-4" />Cancel</button>
-                    <button type="submit" className="flex items-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg font-medium"><Save className="size-4" />Save Changes</button>
+                    <button type="submit" className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium"><Save className="size-4" />Save Changes</button>
                   </>
                 ) : (
-                  <button type="button" onClick={() => setIsEditing(true)} className="flex items-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg font-medium"><Edit className="size-4" />Edit Profile</button>
+                  <button type="button" onClick={() => setIsEditing(true)} className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium"><Edit className="size-4" />Edit Profile</button>
                 )}
               </div>
             </form>
@@ -72,3 +72,4 @@ export default function AdminProfile() {
     </AdminLayout>
   );
 }
+

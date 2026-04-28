@@ -1,6 +1,6 @@
-# Zyndex
+# Learnx
 
-Zyndex is a Vite frontend with a Spring Boot backend that serves the `/api` endpoints used by the app.
+Learnx is a Vite frontend with a Spring Boot backend that serves the `/api` endpoints used by the app.
 
 ## Local Development
 
@@ -30,5 +30,6 @@ Backend hosting:
 
 - Root directory: `spring-backend`
 - Build command: `./mvnw package -DskipTests`
-- Start command: `java -jar target/zyndex-spring-backend-0.0.1-SNAPSHOT.jar`
+- Start command: `java -jar target/learnx-spring-backend-0.0.1-SNAPSHOT.jar`
 - Required environment variables: `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `JWT_SECRET`, `FRONTEND_URL`, `MAIN_ADMIN_EMAIL`, `MAIN_ADMIN_PASSWORD`, `MAIN_ADMIN_NAME`
+

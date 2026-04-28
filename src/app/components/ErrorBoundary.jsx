@@ -9,7 +9,7 @@ export default function ErrorBoundary() {
   console.error('Route error:', error);
 
   const handleGoHome = () => {
-    navigate('/Zyndex/Log-In');
+    navigate('/Learnx/Log-In');
   };
 
   const handleRefresh = () => {
@@ -17,7 +17,7 @@ export default function ErrorBoundary() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50/30 via-white to-orange-50/20 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20 flex items-center justify-center p-6">
       <motion.div
         className="max-w-md w-full"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -26,11 +26,11 @@ export default function ErrorBoundary() {
       >
         <div className="relative bg-white rounded-3xl shadow-2xl p-10 text-center overflow-hidden">
           <div className="absolute top-0 right-0 w-40 h-40 bg-red-100 rounded-full blur-3xl opacity-40" />
-          <div className="absolute bottom-0 left-0 w-40 h-40 bg-orange-100 rounded-full blur-3xl opacity-40" />
+          <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-40" />
           
           <div className="relative">
             <motion.div
-              className="size-24 bg-gradient-to-br from-red-500 to-orange-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg"
+              className="size-24 bg-gradient-to-br from-red-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg"
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ delay: 0.2, type: 'spring' }}
@@ -48,7 +48,7 @@ export default function ErrorBoundary() {
             <div className="flex flex-col gap-3">
               <motion.button
                 onClick={handleGoHome}
-                className="w-full py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/50 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 bg-gradient-to-r from-blue-600 to-red-600 text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -72,3 +72,5 @@ export default function ErrorBoundary() {
     </div>
   );
 }
+
+

@@ -8,16 +8,16 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'What is Zyndex?',
-      answer: 'Zyndex is a comprehensive educational resource library platform that provides access to curated learning materials across various subjects and disciplines.',
+      question: 'What is Learnx?',
+      answer: 'Learnx is a comprehensive educational resource library platform that provides access to curated learning materials across various subjects and disciplines.',
     },
     {
       question: 'How do I access resources?',
       answer: 'Simply create a free account, browse our categories, and access any resource that interests you. Some premium resources may require additional permissions.',
     },
     {
-      question: 'Is Zyndex free to use?',
-      answer: 'Yes, Zyndex offers a free tier with access to a wide range of educational resources. We also offer premium features for enhanced functionality.',
+      question: 'Is Learnx free to use?',
+      answer: 'Yes, Learnx offers a free tier with access to a wide range of educational resources. We also offer premium features for enhanced functionality.',
     },
     {
       question: 'Can I upload my own resources?',
@@ -47,7 +47,7 @@ export default function FAQ() {
 
   return (
     <PublicLayout>
-      <div className="py-16 px-6 min-h-screen bg-gradient-to-br from-orange-50/30 via-white to-orange-50/20">
+      <div className="py-16 px-6 min-h-screen bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20">
         <div className="max-w-3xl mx-auto">
           {/* Hero Section */}
           <motion.div 
@@ -57,7 +57,7 @@ export default function FAQ() {
             transition={{ duration: 0.7 }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
@@ -67,9 +67,9 @@ export default function FAQ() {
             </motion.div>
             
             <h1 className="text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Frequently Asked Questions</span>
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">Frequently Asked Questions</span>
             </h1>
-            <p className="text-xl text-gray-600">Find answers to common questions about Zyndex</p>
+            <p className="text-xl text-gray-600">Find answers to common questions about Learnx</p>
           </motion.div>
 
           {/* FAQ List */}
@@ -84,7 +84,7 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-orange-50/50 transition-colors group"
+                  className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-blue-50/50 transition-colors group"
                 >
                   <span className="font-semibold text-gray-900 pr-4 text-lg">{faq.question}</span>
                   <motion.div
@@ -92,8 +92,8 @@ export default function FAQ() {
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                     className="flex-shrink-0"
                   >
-                    <div className="size-10 bg-orange-100 rounded-xl flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                      <ChevronDown className="size-5 text-orange-600" />
+                    <div className="size-10 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                      <ChevronDown className="size-5 text-blue-600" />
                     </div>
                   </motion.div>
                 </button>
@@ -118,7 +118,7 @@ export default function FAQ() {
 
           {/* Still Have Questions */}
           <motion.div 
-            className="relative bg-gradient-to-br from-orange-600 to-red-600 rounded-3xl p-10 text-center overflow-hidden shadow-xl"
+            className="relative bg-gradient-to-br from-blue-600 to-red-600 rounded-3xl p-10 text-center overflow-hidden shadow-xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
@@ -137,13 +137,13 @@ export default function FAQ() {
               </motion.div>
               
               <h2 className="text-3xl font-bold text-white mb-4">Still have questions?</h2>
-              <p className="text-orange-100 mb-8 text-lg max-w-md mx-auto">
+              <p className="text-blue-100 mb-8 text-lg max-w-md mx-auto">
                 Can't find the answer you're looking for? Please contact our support team.
               </p>
               
               <motion.a
-                href="/Zyndex/About/Contact"
-                className="inline-block px-8 py-4 bg-white text-orange-600 rounded-xl font-bold hover:bg-orange-50 transition-all shadow-lg"
+                href="/Learnx/About/Contact"
+                className="inline-block px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all shadow-lg"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -156,3 +156,4 @@ export default function FAQ() {
     </PublicLayout>
   );
 }
+

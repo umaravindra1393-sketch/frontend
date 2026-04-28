@@ -23,7 +23,7 @@ export default function AdminLayout({ children }) {
   // Get dynamic URL parts
   const adminName = getUrlSafeName();
   const adminEmail = getUrlSafeEmail();
-  const baseUrl = `/Zyndex/Admin/${adminName}/${adminEmail}`;
+  const baseUrl = `/Learnx/Admin/${adminName}/${adminEmail}`;
 
   // Check if we're on the dashboard or profile page
   const isDashboard = location.pathname.includes('/Dashboard');
@@ -85,7 +85,7 @@ export default function AdminLayout({ children }) {
                 <p className="text-sm font-medium text-gray-900">Admin User</p>
                 <p className="text-xs text-gray-500">Administrator</p>
               </div>
-              <div className="size-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-semibold">
+              <div className="size-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-semibold">
                 A
               </div>
             </div>
@@ -110,8 +110,8 @@ export default function AdminLayout({ children }) {
             {/* Logo */}
             <div className="p-6 border-b border-gray-200">
               <div className="flex items-center gap-2">
-                <BookOpen className="size-6 text-orange-600" />
-                <span className="text-xl font-semibold text-gray-900">Zyndex</span>
+                <BookOpen className="size-6 text-blue-600" />
+                <span className="text-xl font-semibold text-gray-900">Learnx</span>
               </div>
             </div>
 
@@ -126,7 +126,7 @@ export default function AdminLayout({ children }) {
                       to={item.path}
                       className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
                         isActive
-                          ? 'bg-orange-50 text-orange-600'
+                          ? 'bg-blue-50 text-blue-600'
                           : 'text-gray-600 hover:bg-gray-50'
                       }`}
                     >
@@ -152,7 +152,7 @@ export default function AdminLayout({ children }) {
         </ResizablePanel>
 
         {/* Resize Handle */}
-        <ResizableHandle withHandle className="hover:bg-orange-500/20 transition-colors" />
+        <ResizableHandle withHandle className="hover:bg-blue-500/20 transition-colors" />
 
         {/* Main Content Panel */}
         <ResizablePanel defaultSize={80} minSize={50}>
@@ -200,7 +200,7 @@ export default function AdminLayout({ children }) {
                     <p className="text-sm font-medium text-gray-900">Admin User</p>
                     <p className="text-xs text-gray-500">Administrator</p>
                   </div>
-                  <div className="size-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-semibold">
+                  <div className="size-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-semibold">
                     A
                   </div>
                 </div>
@@ -217,3 +217,5 @@ export default function AdminLayout({ children }) {
     </div>
   );
 }
+
+

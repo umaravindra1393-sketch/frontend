@@ -53,7 +53,7 @@ apiClient.interceptors.response.use(
           if (hasToken && !isAuthFormRequest) {
             localStorage.removeItem('auth_token');
             localStorage.removeItem('user_data');
-            window.location.href = '/Zyndex/User/Log-In';
+            window.location.href = '/Learnx/User/Log-In';
           }
           break;
         case 403:
@@ -85,3 +85,4 @@ apiClient.interceptors.response.use(
 );
 
 export default apiClient;
+

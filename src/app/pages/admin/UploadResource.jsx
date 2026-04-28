@@ -6,8 +6,9 @@ export default function UploadResource() {
 
   return (
     <Navigate
-      to={`/Zyndex/Admin/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource-Management`}
+      to={`/Learnx/Admin/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource-Management`}
       replace
     />
   );
 }
+

@@ -11,10 +11,10 @@ export default function PublicLayout({ children, showBack = true }) {
   const isActive = (path) => location.pathname.includes(path);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-amber-50 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-sky-50 flex flex-col">
       {/* Header */}
       <motion.header 
-        className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-orange-200/50"
+        className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-blue-200/50"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.3 }}
@@ -26,7 +26,7 @@ export default function PublicLayout({ children, showBack = true }) {
               {showBack && (
                 <motion.button
                   onClick={() => navigate(-1)}
-                  className="p-2 text-slate-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                  className="p-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   whileHover={{ x: -3 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -34,16 +34,16 @@ export default function PublicLayout({ children, showBack = true }) {
                 </motion.button>
               )}
               
-              <Link to="/Zyndex/Log-In" className="flex items-center gap-3 group">
+              <Link to="/Learnx/Log-In" className="flex items-center gap-3 group">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-orange-600/20 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative bg-gradient-to-br from-orange-600 to-red-600 p-2 rounded-lg shadow-md group-hover:shadow-xl transition-shadow">
+                  <div className="absolute inset-0 bg-blue-600/20 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="relative bg-gradient-to-br from-blue-600 to-red-600 p-2 rounded-lg shadow-md group-hover:shadow-xl transition-shadow">
                     <BookOpen className="size-5 text-white" />
                   </div>
                 </div>
                 <div>
-                  <span className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                    Zyndex
+                  <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+                    Learnx
                   </span>
                 </div>
               </Link>
@@ -52,84 +52,84 @@ export default function PublicLayout({ children, showBack = true }) {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1">
               <Link
-                to="/Zyndex/About/About-Us"
+                to="/Learnx/About/About-Us"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/About/About-Us')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 About Us
               </Link>
               <Link
-                to="/Zyndex/About/Contact"
+                to="/Learnx/About/Contact"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/About/Contact')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 Contact
               </Link>
               <span className="text-slate-300">|</span>
               <Link
-                to="/Zyndex/Resources/Browse"
+                to="/Learnx/Resources/Browse"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/Resources/Browse')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 Browse
               </Link>
               <Link
-                to="/Zyndex/Resources/Categories"
+                to="/Learnx/Resources/Categories"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/Resources/Categories')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 Categories
               </Link>
               <span className="text-slate-300">|</span>
               <Link
-                to="/Zyndex/Support/Help-Center"
+                to="/Learnx/Support/Help-Center"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/Support/Help-Center')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 Help Center
               </Link>
               <Link
-                to="/Zyndex/Support/FAQ"
+                to="/Learnx/Support/FAQ"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/Support/FAQ')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 FAQ
               </Link>
               <span className="text-slate-300">|</span>
               <Link
-                to="/Zyndex/Legal/Privacy"
+                to="/Learnx/Legal/Privacy"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/Legal/Privacy')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 Privacy
               </Link>
               <Link
-                to="/Zyndex/Legal/Terms"
+                to="/Learnx/Legal/Terms"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-all ${
                   isActive('/Legal/Terms')
-                    ? 'text-orange-600 bg-orange-50 font-semibold'
-                    : 'text-slate-700 hover:text-orange-600 hover:bg-orange-50'
+                    ? 'text-blue-600 bg-blue-50 font-semibold'
+                    : 'text-slate-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 Terms
@@ -144,11 +144,11 @@ export default function PublicLayout({ children, showBack = true }) {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  to="/Zyndex/User/Log-In"
+                  to="/Learnx/User/Log-In"
                   className="relative group block"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity" />
-                  <div className="relative px-5 py-2 bg-gradient-to-r from-orange-600 to-red-600 text-white text-sm font-semibold rounded-lg shadow-lg shadow-orange-600/30">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity" />
+                  <div className="relative px-5 py-2 bg-gradient-to-r from-blue-600 to-red-600 text-white text-sm font-semibold rounded-lg shadow-lg shadow-blue-600/30">
                     Login
                   </div>
                 </Link>
@@ -157,7 +157,7 @@ export default function PublicLayout({ children, showBack = true }) {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-2 text-slate-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                className="lg:hidden p-2 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
               >
                 {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
               </button>
@@ -171,60 +171,60 @@ export default function PublicLayout({ children, showBack = true }) {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="lg:hidden border-t border-orange-200/50 py-4"
+                className="lg:hidden border-t border-blue-200/50 py-4"
               >
                 <nav className="flex flex-col gap-1">
                   <Link
-                    to="/Zyndex/About/About-Us"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/About/About-Us"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     About Us
                   </Link>
                   <Link
-                    to="/Zyndex/About/Contact"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/About/Contact"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     Contact
                   </Link>
                   <Link
-                    to="/Zyndex/Resources/Browse"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/Resources/Browse"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     Browse Resources
                   </Link>
                   <Link
-                    to="/Zyndex/Resources/Categories"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/Resources/Categories"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     Categories
                   </Link>
                   <Link
-                    to="/Zyndex/Support/Help-Center"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/Support/Help-Center"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     Help Center
                   </Link>
                   <Link
-                    to="/Zyndex/Support/FAQ"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/Support/FAQ"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     FAQ
                   </Link>
                   <Link
-                    to="/Zyndex/Legal/Privacy"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/Legal/Privacy"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     Privacy
                   </Link>
                   <Link
-                    to="/Zyndex/Legal/Terms"
-                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+                    to="/Learnx/Legal/Terms"
+                    className="px-4 py-2.5 text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     Terms
                   </Link>
                   <Link
-                    to="/Zyndex/User/Log-In"
-                    className="mt-2 px-4 py-2.5 bg-gradient-to-r from-orange-600 to-red-600 text-white text-sm font-semibold rounded-lg shadow-lg text-center"
+                    to="/Learnx/User/Log-In"
+                    className="mt-2 px-4 py-2.5 bg-gradient-to-r from-blue-600 to-red-600 text-white text-sm font-semibold rounded-lg shadow-lg text-center"
                   >
                     Login
                   </Link>
@@ -242,3 +242,4 @@ export default function PublicLayout({ children, showBack = true }) {
     </div>
   );
 }
+

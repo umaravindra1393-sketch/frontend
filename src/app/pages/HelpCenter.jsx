@@ -14,20 +14,20 @@ export default function HelpCenter() {
   const [viewMode, setViewMode] = useState('toc'); // 'category' | 'grid' | 'all' | 'toc'
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState('all');
 
-  // Comprehensive help articles database based on actual Zyndex features (100 articles total)
+  // Comprehensive help articles database based on actual Learnx features (100 articles total)
   const baseHelpArticles = [
     // Getting Started (10 articles)
     {
       id: 1,
       category: 'Getting Started',
       title: 'How to create an account',
-      description: 'Step-by-step guide to register on Zyndex',
+      description: 'Step-by-step guide to register on Learnx',
       content: `
-        <h2>Creating Your Zyndex Account</h2>
-        <p>Welcome to Zyndex! Follow these simple steps to create your account:</p>
+        <h2>Creating Your Learnx Account</h2>
+        <p>Welcome to Learnx! Follow these simple steps to create your account:</p>
         <h3>For User Accounts:</h3>
         <ol>
-          <li>Visit the Zyndex Login page</li>
+          <li>Visit the Learnx Login page</li>
           <li>Select "User Access" tab</li>
           <li>Click "Sign Up" to switch to registration mode</li>
           <li>Enter your full name</li>
@@ -53,10 +53,10 @@ export default function HelpCenter() {
       id: 2,
       category: 'Getting Started',
       title: 'Understanding the login process',
-      description: 'How sign-in works in Zyndex',
+      description: 'How sign-in works in Learnx',
       content: `
-        <h2>Zyndex Login Process</h2>
-        <p>Signing in to Zyndex is straightforward and takes you directly to your account dashboard.</p>
+        <h2>Learnx Login Process</h2>
+        <p>Signing in to Learnx is straightforward and takes you directly to your account dashboard.</p>
         <h3>How login works</h3>
         <p>Enter your email, password, and the correct account type to access your account.</p>
         <h3>The Process:</h3>
@@ -81,7 +81,7 @@ export default function HelpCenter() {
       id: 3,
       category: 'Getting Started',
       title: 'Navigating the User Dashboard',
-      description: 'Understanding your Zyndex User home page',
+      description: 'Understanding your Learnx User home page',
       content: `
         <h2>Your User Dashboard Overview</h2>
         <p>Your dashboard is the central hub for accessing educational resources.</p>
@@ -115,7 +115,7 @@ export default function HelpCenter() {
       id: 4,
       category: 'Getting Started',
       title: 'Navigating the Admin Dashboard',
-      description: 'Understanding your Zyndex Admin control panel',
+      description: 'Understanding your Learnx Admin control panel',
       content: `
         <h2>Admin Dashboard Overview</h2>
         <p>The Admin Dashboard provides powerful tools for managing resources and users.</p>
@@ -143,7 +143,7 @@ export default function HelpCenter() {
       description: 'Customize your profile settings',
       content: `
         <h2>Personalizing Your Profile</h2>
-        <p>Make your Zyndex experience unique by customizing your profile:</p>
+        <p>Make your Learnx experience unique by customizing your profile:</p>
         <h3>Accessing Profile Settings:</h3>
         <ol>
           <li>Click on your profile icon in the navigation</li>
@@ -169,8 +169,8 @@ export default function HelpCenter() {
       title: 'Understanding user roles',
       description: 'Learn about User and Admin accounts',
       content: `
-        <h2>User Roles on Zyndex</h2>
-        <p>Zyndex has two main account types with different capabilities:</p>
+        <h2>User Roles on Learnx</h2>
+        <p>Learnx has two main account types with different capabilities:</p>
         <h3>User Account Features:</h3>
         <ul>
           <li>Browse and search educational resources</li>
@@ -219,7 +219,7 @@ export default function HelpCenter() {
           <li>Submit your request</li>
         </ol>
         <h3>What Happens Next:</h3>
-        <p>Your request is sent via secure email to the Zyndex admin team. You'll receive a response within 24-48 business hours.</p>
+        <p>Your request is sent via secure email to the Learnx admin team. You'll receive a response within 24-48 business hours.</p>
         <h3>Tips for Approval:</h3>
         <ul>
           <li>Use a professional email address</li>
@@ -234,10 +234,10 @@ export default function HelpCenter() {
       id: 8,
       category: 'Getting Started',
       title: 'Mobile responsive design',
-      description: 'Using Zyndex on mobile devices',
+      description: 'Using Learnx on mobile devices',
       content: `
-        <h2>Zyndex Mobile Experience</h2>
-        <p>Access Zyndex seamlessly on any device - desktop, tablet, or mobile.</p>
+        <h2>Learnx Mobile Experience</h2>
+        <p>Access Learnx seamlessly on any device - desktop, tablet, or mobile.</p>
         <h3>Mobile Features:</h3>
         <ul>
           <li>Fully responsive design for all screen sizes</li>
@@ -248,7 +248,7 @@ export default function HelpCenter() {
         </ul>
         <h3>Mobile Tips:</h3>
         <ul>
-          <li>Bookmark Zyndex for quick access</li>
+          <li>Bookmark Learnx for quick access</li>
           <li>Use landscape mode for reading resources</li>
           <li>The admin sidebar auto-collapses on small screens</li>
         </ul>
@@ -260,10 +260,10 @@ export default function HelpCenter() {
       id: 9,
       category: 'Getting Started',
       title: 'The orange theme design',
-      description: 'Understanding Zyndex visual design',
+      description: 'Understanding Learnx visual design',
       content: `
-        <h2>Zyndex Design Language</h2>
-        <p>Zyndex features a professional orange-themed design throughout the application.</p>
+        <h2>Learnx Design Language</h2>
+        <p>Learnx features a professional orange-themed design throughout the application.</p>
         <h3>Design Elements:</h3>
         <ul>
           <li><strong>Color Palette:</strong> Orange, red, and amber gradients</li>
@@ -284,7 +284,7 @@ export default function HelpCenter() {
       title: 'Page transition animations',
       description: 'The rotating book loader',
       content: `
-        <h2>Zyndex Page Transitions</h2>
+        <h2>Learnx Page Transitions</h2>
         <p>Every page navigation includes a delightful 5-second rotating book animation.</p>
         <h3>What is the Book Animation?</h3>
         <p>When navigating between pages, you'll see an animated rotating book that represents knowledge and learning.</p>
@@ -307,9 +307,9 @@ export default function HelpCenter() {
       id: 11,
       category: 'Finding Resources',
       title: 'How to search for resources',
-      description: 'Using the Zyndex search feature',
+      description: 'Using the Learnx search feature',
       content: `
-        <h2>Searching on Zyndex</h2>
+        <h2>Searching on Learnx</h2>
         <p>Find educational materials quickly with our powerful search:</p>
         <h3>Basic Search:</h3>
         <ol>
@@ -341,7 +341,7 @@ export default function HelpCenter() {
       description: 'Explore resources by subject area',
       content: `
         <h2>Browse Categories</h2>
-        <p>Zyndex organizes resources into easy-to-navigate categories:</p>
+        <p>Learnx organizes resources into easy-to-navigate categories:</p>
         <h3>Available Categories:</h3>
         <ul>
           <li><strong>Science:</strong> Physics, Chemistry, Biology, and more</li>
@@ -479,7 +479,7 @@ export default function HelpCenter() {
       description: 'Discovering curated content',
       content: `
         <h2>Featured Resources</h2>
-        <p>Zyndex highlights quality resources on your dashboard:</p>
+        <p>Learnx highlights quality resources on your dashboard:</p>
         <h3>Featured Content:</h3>
         <ul>
           <li>High-quality materials selected by educators</li>
@@ -604,7 +604,7 @@ export default function HelpCenter() {
       description: 'How resources are evaluated',
       content: `
         <h2>Resource Quality</h2>
-        <p>All resources on Zyndex are reviewed for quality and accuracy:</p>
+        <p>All resources on Learnx are reviewed for quality and accuracy:</p>
         <h3>Quality Standards:</h3>
         <ul>
           <li>Educational value and accuracy</li>
@@ -615,7 +615,7 @@ export default function HelpCenter() {
         <h3>User Ratings:</h3>
         <p>Resources can be rated by users to help others find the best materials.</p>
         <h3>Admin Review:</h3>
-        <p>Admin team members review uploaded content to ensure it meets Zyndex standards.</p>
+        <p>Admin team members review uploaded content to ensure it meets Learnx standards.</p>
       `,
       tags: ['quality', 'ratings', 'review', 'standards'],
       readTime: '2 min read'
@@ -627,7 +627,7 @@ export default function HelpCenter() {
       description: 'What to see when lists are empty',
       content: `
         <h2>Empty States</h2>
-        <p>When you first use Zyndex, your Downloads and Favourites will be empty.</p>
+        <p>When you first use Learnx, your Downloads and Favourites will be empty.</p>
         <h3>My Downloads:</h3>
         <p>When empty, you'll see:</p>
         <ul>
@@ -654,7 +654,7 @@ export default function HelpCenter() {
       description: 'Understanding different file types',
       content: `
         <h2>File Formats</h2>
-        <p>Zyndex supports various file formats for different types of resources:</p>
+        <p>Learnx supports various file formats for different types of resources:</p>
         <h3>Common Formats:</h3>
         <ul>
           <li><strong>PDF:</strong> Documents, worksheets, guides</li>
@@ -891,7 +891,7 @@ export default function HelpCenter() {
       description: 'How to securely sign out',
       content: `
         <h2>Logging Out</h2>
-        <p>Sign out securely when you're done using Zyndex:</p>
+        <p>Sign out securely when you're done using Learnx:</p>
         <h3>Logout Steps:</h3>
         <ol>
           <li>Click on your profile icon or menu</li>
@@ -978,7 +978,7 @@ export default function HelpCenter() {
       description: 'Keep your account safe',
       content: `
         <h2>Account Security</h2>
-        <p>Protect your Zyndex account with these best practices:</p>
+        <p>Protect your Learnx account with these best practices:</p>
         <h3>Password Security:</h3>
         <ul>
           <li>Use a unique password (not used elsewhere)</li>
@@ -1006,7 +1006,7 @@ export default function HelpCenter() {
       description: 'Managing email communications',
       content: `
         <h2>Email Notifications</h2>
-        <p>Stay informed about your Zyndex account activities:</p>
+        <p>Stay informed about your Learnx account activities:</p>
         <h3>Types of Emails:</h3>
         <ul>
           <li>Account creation confirmation</li>
@@ -1015,7 +1015,7 @@ export default function HelpCenter() {
           <li>Important updates</li>
         </ul>
         <h3>EmailJS Integration:</h3>
-        <p>Zyndex uses EmailJS to send all emails securely. Make sure your email address is correct to receive these important communications.</p>
+        <p>Learnx uses EmailJS to send all emails securely. Make sure your email address is correct to receive these important communications.</p>
         <h3>Email Issues:</h3>
         <ul>
           <li>Check spam/junk folder</li>
@@ -1061,7 +1061,7 @@ export default function HelpCenter() {
       description: 'Understanding your account creation date',
       content: `
         <h2>Member Since</h2>
-        <p>Your profile shows when you joined Zyndex:</p>
+        <p>Your profile shows when you joined Learnx:</p>
         <h3>What It Shows:</h3>
         <ul>
           <li>Exact date you created your account</li>
@@ -1070,7 +1070,7 @@ export default function HelpCenter() {
         </ul>
         <h3>Why It Matters:</h3>
         <ul>
-          <li>Track how long you've been using Zyndex</li>
+          <li>Track how long you've been using Learnx</li>
           <li>Reference for account history</li>
           <li>Milestone tracking</li>
         </ul>
@@ -1085,7 +1085,7 @@ export default function HelpCenter() {
       description: 'Understanding user and admin badges',
       content: `
         <h2>Role Badges</h2>
-        <p>Zyndex uses visual badges to indicate account roles:</p>
+        <p>Learnx uses visual badges to indicate account roles:</p>
         <h3>User Badge:</h3>
         <ul>
           <li>Standard account indicator</li>
@@ -1111,9 +1111,9 @@ export default function HelpCenter() {
       id: 41,
       category: 'Contact Support',
       title: 'How to contact support',
-      description: 'Get help from the Zyndex team',
+      description: 'Get help from the Learnx team',
       content: `
-        <h2>Contacting Zyndex Support</h2>
+        <h2>Contacting Learnx Support</h2>
         <p>Need help? We're here for you!</p>
         <h3>Contact Methods:</h3>
         <ul>
@@ -1166,10 +1166,10 @@ export default function HelpCenter() {
       id: 43,
       category: 'Contact Support',
       title: 'Providing feedback',
-      description: 'Share your thoughts about Zyndex',
+      description: 'Share your thoughts about Learnx',
       content: `
         <h2>User Feedback</h2>
-        <p>We value your input! Share feedback to help us improve Zyndex:</p>
+        <p>We value your input! Share feedback to help us improve Learnx:</p>
         <h3>Feedback Channels:</h3>
         <ul>
           <li><strong>Contact Form:</strong> General feedback and suggestions</li>
@@ -1335,9 +1335,9 @@ export default function HelpCenter() {
       id: 49,
       category: 'Contact Support',
       title: 'About page information',
-      description: 'Learn about Zyndex',
+      description: 'Learn about Learnx',
       content: `
-        <h2>About Zyndex</h2>
+        <h2>About Learnx</h2>
         <p>Learn more about our platform and mission:</p>
         <h3>About Page Includes:</h3>
         <ul>
@@ -1454,16 +1454,16 @@ export default function HelpCenter() {
   };
 
   const quickLinks = [
-    { icon: HelpCircle, text: 'Frequently Asked Questions', link: '/Zyndex/Support/FAQ' },
-    { icon: MessageSquare, text: 'Contact Support', link: '/Zyndex/About/Contact' },
+    { icon: HelpCircle, text: 'Frequently Asked Questions', link: '/Learnx/Support/FAQ' },
+    { icon: MessageSquare, text: 'Contact Support', link: '/Learnx/About/Contact' },
   ];
 
   return (
     <PublicLayout>
       <div className="min-h-screen relative overflow-hidden">
         {/* Professional Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-orange-50/40 pointer-events-none"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-100/10 via-transparent to-transparent pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50/40 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/10 via-transparent to-transparent pointer-events-none"></div>
         
         <div className="relative py-20 px-4">
           <div className="max-w-7xl mx-auto">
@@ -1491,7 +1491,7 @@ export default function HelpCenter() {
                       boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), inset 0 -1px 0 0 rgba(255,255,255,0.6), 0 1px 2px 0 rgba(0,0,0,0.05)'
                     }}>
                     {/* Article Header with Apple-style design */}
-                    <div className="bg-gradient-to-br from-orange-500 to-amber-600 text-white p-8 relative overflow-hidden">
+                    <div className="bg-gradient-to-br from-blue-500 to-sky-600 text-white p-8 relative overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
                       <button
                         onClick={closeArticle}
@@ -1509,8 +1509,8 @@ export default function HelpCenter() {
                           {selectedArticle.category}
                         </span>
                         <h2 className="text-3xl font-bold mb-3">{selectedArticle.title}</h2>
-                        <p className="text-orange-100 text-lg">{selectedArticle.description}</p>
-                        <div className="flex items-center gap-4 mt-4 text-orange-100">
+                        <p className="text-blue-100 text-lg">{selectedArticle.description}</p>
+                        <div className="flex items-center gap-4 mt-4 text-blue-100">
                           <div className="flex items-center gap-1">
                             <Clock className="size-4" />
                             <span className="text-sm">{selectedArticle.readTime}</span>
@@ -1598,7 +1598,7 @@ export default function HelpCenter() {
               {/* Header */}
               <div className="text-center mb-12">
                 <motion.div
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-100 to-amber-100 rounded-full mb-6"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-sky-100 rounded-full mb-6"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
@@ -1606,8 +1606,8 @@ export default function HelpCenter() {
                     boxShadow: '0 2px 8px -2px rgba(249, 115, 22, 0.3)'
                   }}
                 >
-                  <HelpCircle className="size-5 text-orange-600" />
-                  <span className="text-sm font-semibold text-orange-700">Knowledge Base</span>
+                  <HelpCircle className="size-5 text-blue-600" />
+                  <span className="text-sm font-semibold text-blue-700">Knowledge Base</span>
                 </motion.div>
                 <motion.h1 
                   className="text-5xl md:text-6xl font-bold text-gray-900 mb-6"
@@ -1635,13 +1635,13 @@ export default function HelpCenter() {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <div className="relative">
-                  <Search className="absolute left-6 top-1/2 -translate-y-1/2 size-6 text-orange-500" />
+                  <Search className="absolute left-6 top-1/2 -translate-y-1/2 size-6 text-blue-500" />
                   <input
                     type="text"
                     placeholder="Type your question or search keywords..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-16 pr-16 py-5 text-lg border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-orange-500/20 focus:border-orange-400 bg-white transition-all"
+                    className="w-full pl-16 pr-16 py-5 text-lg border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/20 focus:border-blue-400 bg-white transition-all"
                     style={{
                       boxShadow: '0 8px 16px -4px rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.05)'
                     }}
@@ -1690,30 +1690,30 @@ export default function HelpCenter() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.03 }}
                                 onClick={() => openArticle(article)}
-                                className="p-4 hover:bg-gradient-to-r hover:from-orange-50/70 hover:to-transparent cursor-pointer transition-all duration-200 group"
+                                className="p-4 hover:bg-gradient-to-r hover:from-blue-50/70 hover:to-transparent cursor-pointer transition-all duration-200 group"
                               >
                                 <div className="flex items-start gap-4">
-                                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0 shadow-md"
+                                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-sky-600 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0 shadow-md"
                                     style={{
                                       boxShadow: '0 2px 4px -1px rgba(249, 115, 22, 0.4), inset 0 -1px 0 0 rgba(0,0,0,0.1)'
                                     }}>
                                     {article.id}
                                   </div>
                                   <div className="flex-1 min-w-0">
-                                    <h4 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
+                                    <h4 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                                       {article.title}
                                     </h4>
                                     <p className="text-sm text-gray-600 mt-1 line-clamp-1">
                                       {article.description}
                                     </p>
                                     <div className="flex items-center gap-3 mt-2">
-                                      <span className="inline-block text-xs text-orange-700 font-medium px-2.5 py-0.5 bg-gradient-to-r from-orange-100 to-amber-100 rounded-md">
+                                      <span className="inline-block text-xs text-blue-700 font-medium px-2.5 py-0.5 bg-gradient-to-r from-blue-100 to-sky-100 rounded-md">
                                         {article.category}
                                       </span>
                                       <span className="text-xs text-gray-500">{article.readTime}</span>
                                     </div>
                                   </div>
-                                  <ChevronRight className="size-4 text-gray-300 group-hover:text-orange-500 flex-shrink-0 mt-0.5 transition-colors group-hover:translate-x-0.5" />
+                                  <ChevronRight className="size-4 text-gray-300 group-hover:text-blue-500 flex-shrink-0 mt-0.5 transition-colors group-hover:translate-x-0.5" />
                                 </div>
                               </motion.div>
                             ))}
@@ -1749,8 +1749,8 @@ export default function HelpCenter() {
                     onClick={() => setViewMode('toc')}
                     className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium transition-all duration-300 ${
                       viewMode === 'toc'
-                        ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow-lg shadow-orange-500/30'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-400 hover:bg-orange-50'
+                        ? 'bg-gradient-to-r from-blue-500 to-sky-600 text-white shadow-lg shadow-blue-500/30'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-blue-400 hover:bg-blue-50'
                     }`}
                     style={{
                       boxShadow: viewMode === 'toc'
@@ -1767,8 +1767,8 @@ export default function HelpCenter() {
                     onClick={() => setViewMode('category')}
                     className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium transition-all duration-300 ${
                       viewMode === 'category'
-                        ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow-lg shadow-orange-500/30'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-400 hover:bg-orange-50'
+                        ? 'bg-gradient-to-r from-blue-500 to-sky-600 text-white shadow-lg shadow-blue-500/30'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-blue-400 hover:bg-blue-50'
                     }`}
                     style={{
                       boxShadow: viewMode === 'category'
@@ -1785,8 +1785,8 @@ export default function HelpCenter() {
                     onClick={() => setViewMode('grid')}
                     className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium transition-all duration-300 ${
                       viewMode === 'grid'
-                        ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow-lg shadow-orange-500/30'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-400 hover:bg-orange-50'
+                        ? 'bg-gradient-to-r from-blue-500 to-sky-600 text-white shadow-lg shadow-blue-500/30'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-blue-400 hover:bg-blue-50'
                     }`}
                     style={{
                       boxShadow: viewMode === 'grid'
@@ -1803,8 +1803,8 @@ export default function HelpCenter() {
                     onClick={() => setViewMode('all')}
                     className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium transition-all duration-300 ${
                       viewMode === 'all'
-                        ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow-lg shadow-orange-500/30'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-400 hover:bg-orange-50'
+                        ? 'bg-gradient-to-r from-blue-500 to-sky-600 text-white shadow-lg shadow-blue-500/30'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-blue-400 hover:bg-blue-50'
                     }`}
                     style={{
                       boxShadow: viewMode === 'all'
@@ -1823,7 +1823,7 @@ export default function HelpCenter() {
                     animate={{ opacity: 1, x: 0 }}
                     value={selectedCategoryFilter}
                     onChange={(e) => setSelectedCategoryFilter(e.target.value)}
-                    className="px-4 py-2 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all cursor-pointer"
+                    className="px-4 py-2 bg-white border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all cursor-pointer"
                     style={{
                       boxShadow: '0 2px 4px -1px rgba(0,0,0,0.06), inset 0 -1px 0 0 rgba(0,0,0,0.05)'
                     }}
@@ -1865,7 +1865,7 @@ export default function HelpCenter() {
                     >
                       <div className="px-6 py-5 bg-gradient-to-r from-gray-50 to-white border-b-2 border-gray-200">
                         <div className="flex items-center gap-4">
-                          <div className="p-3 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl shadow-md"
+                          <div className="p-3 bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl shadow-md"
                             style={{
                               boxShadow: '0 4px 6px -1px rgba(249, 115, 22, 0.3), inset 0 -1px 0 0 rgba(0,0,0,0.1)'
                             }}>
@@ -1888,24 +1888,24 @@ export default function HelpCenter() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.02 }}
                             onClick={() => openArticle(article)}
-                            className="flex items-start gap-3 p-4 bg-white border border-gray-200 rounded-xl hover:border-orange-400 hover:shadow-xl transition-all duration-300 group text-left"
+                            className="flex items-start gap-3 p-4 bg-white border border-gray-200 rounded-xl hover:border-blue-400 hover:shadow-xl transition-all duration-300 group text-left"
                             style={{
                               boxShadow: '0 2px 4px 0 rgba(0,0,0,0.06), inset 0 -1px 0 0 rgba(255,255,255,0.8)'
                             }}
                           >
-                            <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-md"
+                            <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-sky-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-md"
                               style={{
                                 boxShadow: '0 2px 4px -1px rgba(249, 115, 22, 0.4), inset 0 -1px 0 0 rgba(0,0,0,0.1)'
                               }}>
                               {article.id}
                             </div>
                             <div className="flex-1 min-w-0">
-                              <h4 className="font-semibold text-sm text-gray-900 group-hover:text-orange-600 transition-colors line-clamp-2 leading-snug">
+                              <h4 className="font-semibold text-sm text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
                                 {article.title}
                               </h4>
                               <p className="text-xs text-gray-500 mt-1.5">{article.readTime}</p>
                             </div>
-                            <ChevronRight className="size-4 text-gray-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all flex-shrink-0 mt-0.5" />
+                            <ChevronRight className="size-4 text-gray-300 group-hover:text-blue-500 group-hover:translate-x-1 transition-all flex-shrink-0 mt-0.5" />
                           </motion.button>
                         ))}
                       </div>
@@ -1936,10 +1936,10 @@ export default function HelpCenter() {
                     >
                       <button
                         onClick={() => toggleCategory(category)}
-                        className="w-full px-6 py-5 flex items-center justify-between bg-gradient-to-r from-orange-50 to-amber-50 hover:from-orange-100 hover:to-amber-100 transition-all duration-300 group"
+                        className="w-full px-6 py-5 flex items-center justify-between bg-gradient-to-r from-blue-50 to-sky-50 hover:from-blue-100 hover:to-sky-100 transition-all duration-300 group"
                       >
                         <div className="flex items-center gap-4">
-                          <div className="p-3 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300"
+                          <div className="p-3 bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300"
                             style={{
                               boxShadow: '0 10px 25px -5px rgba(249, 115, 22, 0.3), inset 0 -2px 0 0 rgba(0,0,0,0.1)'
                             }}>
@@ -1954,7 +1954,7 @@ export default function HelpCenter() {
                           animate={{ rotate: expandedCategory === category ? 180 : 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <ChevronDown className="size-6 text-gray-400 group-hover:text-orange-600 transition-colors" />
+                          <ChevronDown className="size-6 text-gray-400 group-hover:text-blue-600 transition-colors" />
                         </motion.div>
                       </button>
 
@@ -1981,14 +1981,14 @@ export default function HelpCenter() {
                                   }}
                                 >
                                   <div className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-md"
+                                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-sky-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-md"
                                       style={{
                                         boxShadow: '0 4px 6px -1px rgba(249, 115, 22, 0.3), inset 0 -1px 0 0 rgba(0,0,0,0.1)'
                                       }}>
                                       {article.id}
                                     </div>
                                     <div className="flex-1 min-w-0">
-                                      <h4 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors line-clamp-2 mb-1">
+                                      <h4 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 mb-1">
                                         {article.title}
                                       </h4>
                                       <p className="text-sm text-gray-600 line-clamp-2 mb-2">
@@ -1999,7 +1999,7 @@ export default function HelpCenter() {
                                         <span>{article.readTime}</span>
                                       </div>
                                     </div>
-                                    <ChevronRight className="size-5 text-gray-400 group-hover:text-orange-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                                    <ChevronRight className="size-5 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
                                   </div>
                                 </motion.div>
                               ))}
@@ -2026,23 +2026,23 @@ export default function HelpCenter() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.02 }}
                       onClick={() => openArticle(article)}
-                      className="bg-white p-6 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-2xl cursor-pointer transition-all duration-300 group"
+                      className="bg-white p-6 rounded-2xl border border-gray-200 hover:border-blue-400 hover:shadow-2xl cursor-pointer transition-all duration-300 group"
                       style={{
                         boxShadow: '0 2px 8px 0 rgba(0,0,0,0.06), inset 0 -1px 0 0 rgba(255,255,255,0.8)'
                       }}
                     >
                       <div className="flex items-start justify-between mb-4">
-                        <span className="inline-block px-3 py-1.5 bg-gradient-to-r from-orange-100 to-amber-100 text-orange-700 rounded-lg text-xs font-semibold">
+                        <span className="inline-block px-3 py-1.5 bg-gradient-to-r from-blue-100 to-sky-100 text-blue-700 rounded-lg text-xs font-semibold">
                           {article.category}
                         </span>
-                        <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-xs shadow-md"
+                        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-sky-600 rounded-lg flex items-center justify-center text-white font-bold text-xs shadow-md"
                           style={{
                             boxShadow: '0 2px 4px -1px rgba(249, 115, 22, 0.4), inset 0 -1px 0 0 rgba(0,0,0,0.1)'
                           }}>
                           {article.id}
                         </div>
                       </div>
-                      <h3 className="font-bold text-lg text-gray-900 group-hover:text-orange-600 transition-colors mb-3 line-clamp-2 leading-snug">
+                      <h3 className="font-bold text-lg text-gray-900 group-hover:text-blue-600 transition-colors mb-3 line-clamp-2 leading-snug">
                         {article.title}
                       </h3>
                       <p className="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed">
@@ -2053,7 +2053,7 @@ export default function HelpCenter() {
                           <Clock className="size-3.5" />
                           <span>{article.readTime}</span>
                         </div>
-                        <ChevronRight className="size-4 text-gray-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
+                        <ChevronRight className="size-4 text-gray-300 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
                       </div>
                     </motion.div>
                   ))}
@@ -2084,10 +2084,10 @@ export default function HelpCenter() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.02 }}
                         onClick={() => openArticle(article)}
-                        className="p-6 hover:bg-gradient-to-r hover:from-orange-50/50 hover:to-transparent cursor-pointer transition-all duration-300 group"
+                        className="p-6 hover:bg-gradient-to-r hover:from-blue-50/50 hover:to-transparent cursor-pointer transition-all duration-300 group"
                       >
                         <div className="flex items-start gap-5">
-                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center text-white font-bold text-sm shadow-md"
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl flex items-center justify-center text-white font-bold text-sm shadow-md"
                             style={{
                               boxShadow: '0 2px 4px -1px rgba(249, 115, 22, 0.4), inset 0 -1px 0 0 rgba(0,0,0,0.1)'
                             }}>
@@ -2095,7 +2095,7 @@ export default function HelpCenter() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-3 mb-2">
-                              <span className="inline-block px-3 py-1 bg-gradient-to-r from-orange-100 to-amber-100 text-orange-700 rounded-lg text-xs font-semibold">
+                              <span className="inline-block px-3 py-1 bg-gradient-to-r from-blue-100 to-sky-100 text-blue-700 rounded-lg text-xs font-semibold">
                                 {article.category}
                               </span>
                               <span className="flex items-center gap-1 text-xs text-gray-500">
@@ -2103,14 +2103,14 @@ export default function HelpCenter() {
                                 {article.readTime}
                               </span>
                             </div>
-                            <h3 className="font-bold text-lg text-gray-900 group-hover:text-orange-600 transition-colors mb-2">
+                            <h3 className="font-bold text-lg text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                               {article.title}
                             </h3>
                             <p className="text-sm text-gray-600 line-clamp-2 leading-relaxed">
                               {article.description}
                             </p>
                           </div>
-                          <ChevronRight className="size-6 text-gray-400 group-hover:text-orange-600 group-hover:translate-x-1 transition-all flex-shrink-0 mt-2" />
+                          <ChevronRight className="size-6 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0 mt-2" />
                         </div>
                       </motion.div>
                     ))}
@@ -2138,18 +2138,18 @@ export default function HelpCenter() {
                         boxShadow: '0 2px 4px -1px rgba(0,0,0,0.06), inset 0 -1px 0 0 rgba(255,255,255,0.8)'
                       }}
                     >
-                      <div className="p-3 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl shadow-md group-hover:scale-110 transition-transform duration-300"
+                      <div className="p-3 bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl shadow-md group-hover:scale-110 transition-transform duration-300"
                         style={{
                           boxShadow: '0 4px 6px -1px rgba(249, 115, 22, 0.3), inset 0 -1px 0 0 rgba(0,0,0,0.1)'
                         }}>
                         <link.icon className="size-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
+                        <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                           {link.text}
                         </h3>
                       </div>
-                      <ChevronRight className="size-5 text-gray-400 group-hover:text-orange-600 group-hover:translate-x-1 transition-all" />
+                      <ChevronRight className="size-5 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
                     </motion.a>
                   ))}
                 </div>
@@ -2162,3 +2162,5 @@ export default function HelpCenter() {
     </PublicLayout>
   );
 }
+
+

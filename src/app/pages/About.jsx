@@ -4,9 +4,9 @@ import PublicLayout from '@/app/components/PublicLayout';
 
 export default function About() {
   const teamMembers = [
-    { initials: 'GB', name: 'G Bhaanu Sai', role: 'Team Member', regNo: '2400030952', color: 'bg-gradient-to-br from-orange-500 to-orange-600' },
-    { initials: 'MP', name: 'Murala Pavan Kumar', role: 'Team Member', regNo: '2400030999', color: 'bg-gradient-to-br from-orange-600 to-red-600' },
-    { initials: 'VN', name: 'Vasa Neeraj Kumar', role: 'Team Member', regNo: '2400030983', color: 'bg-gradient-to-br from-amber-500 to-orange-600' },
+    { initials: 'GB', name: 'G Bhaanu Sai', role: 'Team Member', regNo: '2400030952', color: 'bg-gradient-to-br from-blue-500 to-blue-600' },
+    { initials: 'MP', name: 'Murala Pavan Kumar', role: 'Team Member', regNo: '2400030999', color: 'bg-gradient-to-br from-blue-600 to-red-600' },
+    { initials: 'VN', name: 'Vasa Neeraj Kumar', role: 'Team Member', regNo: '2400030983', color: 'bg-gradient-to-br from-sky-500 to-blue-600' },
   ];
 
   const values = [
@@ -29,11 +29,11 @@ export default function About() {
 
   return (
     <PublicLayout>
-      <div className="py-24 px-6 min-h-screen bg-gradient-to-br from-slate-50 via-white to-orange-50/30 relative overflow-hidden">
+      <div className="py-24 px-6 min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
-            className="absolute top-20 left-10 w-72 h-72 bg-orange-200/20 rounded-full blur-3xl"
+            className="absolute top-20 left-10 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"
             animate={{
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.5, 0.3],
@@ -45,7 +45,7 @@ export default function About() {
             }}
           />
           <motion.div
-            className="absolute bottom-20 right-10 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl"
+            className="absolute bottom-20 right-10 w-96 h-96 bg-sky-200/20 rounded-full blur-3xl"
             animate={{
               scale: [1.2, 1, 1.2],
               opacity: [0.5, 0.3, 0.5],
@@ -68,7 +68,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 backdrop-blur-xl border border-orange-200/50 rounded-full text-sm font-semibold mb-8 shadow-lg shadow-orange-100/50"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 backdrop-blur-xl border border-blue-200/50 rounded-full text-sm font-semibold mb-8 shadow-lg shadow-blue-100/50"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
@@ -76,8 +76,8 @@ export default function About() {
                 boxShadow: '0 4px 24px -8px rgba(249, 115, 22, 0.25), 0 0 0 1px rgba(249, 115, 22, 0.1) inset'
               }}
             >
-              <Sparkles className="size-4 text-orange-600" />
-              <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              <Sparkles className="size-4 text-blue-600" />
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 About Our Platform
               </span>
             </motion.div>
@@ -91,7 +91,7 @@ export default function About() {
                 textShadow: '0 2px 40px rgba(249, 115, 22, 0.1)'
               }}
             >
-              About <span className="bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 bg-clip-text text-transparent">Zyndex</span>
+              About <span className="bg-gradient-to-r from-blue-600 via-red-600 to-blue-600 bg-clip-text text-transparent">Learnx</span>
             </motion.h1>
             <motion.p 
               className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -99,7 +99,7 @@ export default function About() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Building the future of <span className="font-semibold text-orange-600">educational resources</span> through technology and <span className="font-semibold text-orange-600">innovation</span>
+              Building the future of <span className="font-semibold text-blue-600">educational resources</span> through technology and <span className="font-semibold text-blue-600">innovation</span>
             </motion.p>
           </motion.div>
 
@@ -115,11 +115,11 @@ export default function About() {
                 boxShadow: '0 20px 60px -15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5) inset'
               }}
             >
-              <div className="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-orange-400/20 to-transparent rounded-full blur-3xl group-hover:opacity-70 opacity-40 transition-opacity duration-500" />
+              <div className="absolute -top-20 -right-20 w-60 h-60 bg-gradient-to-br from-blue-400/20 to-transparent rounded-full blur-3xl group-hover:opacity-70 opacity-40 transition-opacity duration-500" />
               
               <div className="relative">
                 <motion.div 
-                  className="size-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 shadow-2xl shadow-orange-500/40"
+                  className="size-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-2xl shadow-blue-500/40"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                   style={{
@@ -149,7 +149,7 @@ export default function About() {
               
               <div className="relative">
                 <motion.div 
-                  className="size-16 bg-gradient-to-br from-red-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 shadow-2xl shadow-red-500/40"
+                  className="size-16 bg-gradient-to-br from-red-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-2xl shadow-red-500/40"
                   whileHover={{ scale: 1.1, rotate: -5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                   style={{
@@ -160,7 +160,7 @@ export default function About() {
                 </motion.div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-5">Our Vision</h2>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  We envision a world where every learner has seamless access to curated educational content across all disciplines. Zyndex aims to be the go-to platform for academic excellence, fostering a global community of continuous learners.
+                  We envision a world where every learner has seamless access to curated educational content across all disciplines. Learnx aims to be the go-to platform for academic excellence, fostering a global community of continuous learners.
                 </p>
               </div>
             </motion.div>
@@ -175,7 +175,7 @@ export default function About() {
           >
             <div className="text-center mb-16">
               <motion.div 
-                className="size-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-amber-500/40"
+                className="size-20 bg-gradient-to-br from-sky-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-sky-500/40"
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ delay: 0.6, type: 'spring', stiffness: 200 }}
@@ -202,11 +202,11 @@ export default function About() {
                     boxShadow: '0 20px 60px -15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5) inset'
                   }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-50/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   <div className="relative">
                     <motion.div 
-                      className={`size-24 ${member.color} rounded-3xl flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 shadow-2xl shadow-orange-500/40`}
+                      className={`size-24 ${member.color} rounded-3xl flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 shadow-2xl shadow-blue-500/40`}
                       whileHover={{ scale: 1.15, rotate: 5 }}
                       transition={{ type: "spring", stiffness: 300 }}
                       style={{
@@ -216,8 +216,8 @@ export default function About() {
                       {member.initials}
                     </motion.div>
                     <h3 className="font-bold text-gray-900 mb-2 text-xl">{member.name}</h3>
-                    <p className="text-sm text-orange-600 font-semibold mb-4">{member.role}</p>
-                    <div className="inline-flex items-center px-4 py-2 bg-orange-50/80 backdrop-blur-sm rounded-xl border border-orange-200/50 shadow-sm">
+                    <p className="text-sm text-blue-600 font-semibold mb-4">{member.role}</p>
+                    <div className="inline-flex items-center px-4 py-2 bg-blue-50/80 backdrop-blur-sm rounded-xl border border-blue-200/50 shadow-sm">
                       <p className="text-xs text-gray-600 font-medium">Reg. No: {member.regNo}</p>
                     </div>
                   </div>
@@ -250,18 +250,18 @@ export default function About() {
                     boxShadow: '0 20px 60px -15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5) inset'
                   }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-50/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   <div className="relative">
                     <motion.div 
-                      className="size-20 bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-orange-200/50"
+                      className="size-20 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-blue-200/50"
                       whileHover={{ scale: 1.1, rotate: 10 }}
                       transition={{ type: "spring", stiffness: 300 }}
                       style={{
                         boxShadow: '0 10px 30px -8px rgba(249, 115, 22, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.5) inset'
                       }}
                     >
-                      <value.icon className="size-10 text-orange-600" />
+                      <value.icon className="size-10 text-blue-600" />
                     </motion.div>
                     <h3 className="font-bold text-gray-900 mb-4 text-2xl">{value.title}</h3>
                     <p className="text-base text-gray-600 leading-relaxed">{value.description}</p>
@@ -275,3 +275,5 @@ export default function About() {
     </PublicLayout>
   );
 }
+
+

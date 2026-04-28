@@ -33,7 +33,7 @@ function SubmissionLoader({ message }) {
             ease: "linear"
           }}
         >
-          <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg">
+          <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg">
             <BookOpen className="size-10 text-white" />
           </div>
         </motion.div>
@@ -49,17 +49,17 @@ function SubmissionLoader({ message }) {
         {/* Loading Dots */}
         <div className="flex items-center justify-center gap-2">
           <motion.div
-            className="w-2 h-2 bg-orange-600 rounded-full"
+            className="w-2 h-2 bg-blue-600 rounded-full"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 0.6, repeat: Infinity, delay: 0 }}
           />
           <motion.div
-            className="w-2 h-2 bg-orange-600 rounded-full"
+            className="w-2 h-2 bg-blue-600 rounded-full"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}
           />
           <motion.div
-            className="w-2 h-2 bg-orange-600 rounded-full"
+            className="w-2 h-2 bg-blue-600 rounded-full"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 0.6, repeat: Infinity, delay: 0.4 }}
           />
@@ -96,8 +96,8 @@ export default function ForgotPassword() {
     if (/[^a-zA-Z0-9]/.test(password)) strength++;
 
     if (strength <= 2) return { text: 'Weak', color: 'text-red-600' };
-    if (strength <= 3) return { text: 'Fair', color: 'text-orange-600' };
-    if (strength <= 4) return { text: 'Good', color: 'text-amber-600' };
+    if (strength <= 3) return { text: 'Fair', color: 'text-blue-600' };
+    if (strength <= 4) return { text: 'Good', color: 'text-sky-600' };
     return { text: 'Strong', color: 'text-green-600' };
   };
 
@@ -158,7 +158,7 @@ export default function ForgotPassword() {
         
         // Redirect to login after successful submission
         setTimeout(() => {
-          navigate('/Zyndex/User/Log-In');
+          navigate('/Learnx/User/Log-In');
         }, 500);
       }, 15000); // 15 seconds as requested
 
@@ -178,12 +178,12 @@ export default function ForgotPassword() {
       </AnimatePresence>
 
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-amber-50">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-sky-50">
         <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] bg-[size:32px_32px]" />
         
         {/* Floating Orbs */}
         <motion.div
-          className="absolute top-20 left-20 w-72 h-72 bg-orange-400/20 rounded-full blur-3xl"
+          className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"
           animate={{
             x: [0, 100, 0],
             y: [0, -50, 0],
@@ -210,7 +210,7 @@ export default function ForgotPassword() {
 
       {/* Header */}
       <motion.header 
-        className="relative z-10 py-6 px-8 backdrop-blur-sm border-b border-orange-200/50 depth-3d-elevated glass-3d"
+        className="relative z-10 py-6 px-8 backdrop-blur-sm border-b border-blue-200/50 depth-3d-elevated glass-3d"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] }}
@@ -221,14 +221,14 @@ export default function ForgotPassword() {
             whileHover={{ scale: 1.05 }}
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-orange-600/20 rounded-xl blur-xl" />
-              <div className="relative bg-gradient-to-br from-orange-600 to-red-600 p-2.5 rounded-xl shadow-lg">
+              <div className="absolute inset-0 bg-blue-600/20 rounded-xl blur-xl" />
+              <div className="relative bg-gradient-to-br from-blue-600 to-red-600 p-2.5 rounded-xl shadow-lg">
                 <BookOpen className="size-6 text-white" />
               </div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                Zyndex
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+                Learnx
               </h1>
               <p className="text-xs text-slate-500 font-medium">Educational Excellence</p>
             </div>
@@ -236,8 +236,8 @@ export default function ForgotPassword() {
 
           {/* Back to Login Link */}
           <Link 
-            to="/Zyndex/User/Log-In"
-            className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all"
+            to="/Learnx/User/Log-In"
+            className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all"
           >
             Back to Login
           </Link>
@@ -255,9 +255,9 @@ export default function ForgotPassword() {
             className="relative w-full max-w-lg"
           >
             {/* Card Glow Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl blur-3xl opacity-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-3xl blur-3xl opacity-10" />
             
-            <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-orange-200/50 p-8 lg:p-10 depth-3d-float glass-3d surface-highlight">
+            <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-blue-200/50 p-8 lg:p-10 depth-3d-float glass-3d surface-highlight">
               {/* Title Section */}
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
@@ -265,7 +265,7 @@ export default function ForgotPassword() {
                 transition={{ delay: 0.4 }}
                 className="mb-8 text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-lg mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-red-600 rounded-2xl shadow-lg mb-4">
                   <KeyRound className="size-8 text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-slate-900 mb-2">
@@ -308,7 +308,7 @@ export default function ForgotPassword() {
                     <div className="grid grid-cols-2 gap-1 relative">
                       {/* Sliding Background */}
                       <motion.div
-                        className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg shadow-lg"
+                        className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-blue-600 to-red-600 rounded-lg shadow-lg"
                         initial={false}
                         animate={{
                           x: userType === 'user' ? '0%' : '100%'
@@ -369,15 +369,15 @@ export default function ForgotPassword() {
                     Full Name
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <User className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors" />
+                      <User className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
                       <input
                         type="text"
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                         placeholder="Enter your full name"
-                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all depth-3d-input"
+                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all depth-3d-input"
                         required
                       />
                     </div>
@@ -395,9 +395,9 @@ export default function ForgotPassword() {
                     <span className="text-slate-500 font-normal ml-1">(Registered email)</span>
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <Mail className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors" />
+                      <Mail className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
                       <input
                         type="email"
                         value={email}
@@ -405,7 +405,7 @@ export default function ForgotPassword() {
                         placeholder="Enter your registered email"
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                         title="Email must contain @ and a domain (e.g., .com, .org)"
-                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all depth-3d-input"
+                        className="w-full pl-12 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all depth-3d-input"
                         required
                       />
                     </div>
@@ -423,20 +423,20 @@ export default function ForgotPassword() {
                     <span className="text-slate-500 font-normal ml-1">(Optional)</span>
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <Lock className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors z-10" />
+                      <Lock className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors z-10" />
                       <input
                         type={showPreviousPassword ? 'text' : 'password'}
                         value={previousPassword}
                         onChange={(e) => setPreviousPassword(e.target.value)}
                         placeholder="Enter previous password if known"
-                        className="w-full pl-12 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all depth-3d-input"
+                        className="w-full pl-12 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all depth-3d-input"
                       />
                       <motion.button
                         type="button"
                         onClick={() => setShowPreviousPassword(!showPreviousPassword)}
-                        className="absolute right-4 p-1 text-slate-400 hover:text-orange-600 transition-colors z-10"
+                        className="absolute right-4 p-1 text-slate-400 hover:text-blue-600 transition-colors z-10"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                       >
@@ -459,22 +459,22 @@ export default function ForgotPassword() {
                     New Password
                   </label>
                   <div className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl opacity-0 group-focus-within:opacity-10 blur transition-opacity" />
                     <div className="relative flex items-center">
-                      <Lock className="absolute left-4 size-5 text-slate-400 group-focus-within:text-orange-600 transition-colors z-10" />
+                      <Lock className="absolute left-4 size-5 text-slate-400 group-focus-within:text-blue-600 transition-colors z-10" />
                       <input
                         type={showNewPassword ? 'text' : 'password'}
                         value={newPassword}
                         onChange={(e) => setNewPassword(e.target.value)}
                         placeholder="Enter your new password"
-                        className="w-full pl-12 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-orange-600 focus:ring-4 focus:ring-orange-600/10 outline-none transition-all depth-3d-input"
+                        className="w-full pl-12 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 outline-none transition-all depth-3d-input"
                         required
                         minLength="8"
                       />
                       <motion.button
                         type="button"
                         onClick={() => setShowNewPassword(!showNewPassword)}
-                        className="absolute right-4 p-1 text-slate-400 hover:text-orange-600 transition-colors z-10"
+                        className="absolute right-4 p-1 text-slate-400 hover:text-blue-600 transition-colors z-10"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                       >
@@ -504,8 +504,8 @@ export default function ForgotPassword() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.75 }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-                  <div className="relative flex items-center justify-center gap-2 py-4 px-6 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl shadow-lg shadow-orange-600/30">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
+                  <div className="relative flex items-center justify-center gap-2 py-4 px-6 bg-gradient-to-r from-blue-600 to-red-600 text-white font-semibold rounded-xl shadow-lg shadow-blue-600/30">
                     {isSubmitting ? (
                       <>
                         <motion.div
@@ -530,20 +530,20 @@ export default function ForgotPassword() {
       </div>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-orange-200/50 backdrop-blur-sm mt-auto">
+      <footer className="relative z-10 border-t border-blue-200/50 backdrop-blur-sm mt-auto">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p className="text-sm text-slate-600">
-              © 2026 Zyndex. All rights reserved.
+              © 2026 Learnx. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/Zyndex/Legal/Privacy" className="text-sm text-slate-600 hover:text-orange-600 transition-colors">
+              <Link to="/Learnx/Legal/Privacy" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
                 Privacy
               </Link>
-              <Link to="/Zyndex/Legal/Terms" className="text-sm text-slate-600 hover:text-orange-600 transition-colors">
+              <Link to="/Learnx/Legal/Terms" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
                 Terms
               </Link>
-              <Link to="/Zyndex/Support/FAQ" className="text-sm text-slate-600 hover:text-orange-600 transition-colors">
+              <Link to="/Learnx/Support/FAQ" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
                 FAQ
               </Link>
             </div>
@@ -553,3 +553,5 @@ export default function ForgotPassword() {
     </div>
   );
 }
+
+

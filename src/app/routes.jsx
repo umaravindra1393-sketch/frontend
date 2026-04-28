@@ -3,7 +3,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import PageTransitionWrapper from './components/PageTransitionWrapper';
 import ErrorBoundary from './components/ErrorBoundary';
 import RootLayout from './components/RootLayout';
-// Route configuration for Zyndex application
+// Route configuration for Learnx application
 import Login from './pages/Login';
 import ForgotPassword from './pages/ForgotPassword';
 import AdminRequest from './pages/AdminRequest';
@@ -34,142 +34,143 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/Zyndex/User/Log-In" replace />
+        element: <Navigate to="/Learnx/User/Log-In" replace />
       },
       // User Login/Sign-Up Routes
       {
-        path: "Zyndex/User/Log-In",
+        path: "Learnx/User/Log-In",
         element: <PageTransitionWrapper duration={5000}><Login /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/User/Sign-In",
+        path: "Learnx/User/Sign-In",
         element: <PageTransitionWrapper duration={5000}><Login /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/User/Sign-Up",
+        path: "Learnx/User/Sign-Up",
         element: <PageTransitionWrapper duration={5000}><Login /></PageTransitionWrapper>
       },
       // Admin Login/Sign-Up Routes
       {
-        path: "Zyndex/Admin/Log-In",
+        path: "Learnx/Admin/Log-In",
         element: <PageTransitionWrapper duration={5000}><Login /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Admin/Sign-Up",
+        path: "Learnx/Admin/Sign-Up",
         element: <PageTransitionWrapper duration={5000}><AdminRequest /></PageTransitionWrapper>
       },
       // Forgot Password Route
       {
-        path: "Zyndex/Auth/Forgot-Password",
+        path: "Learnx/Auth/Forgot-Password",
         element: <PageTransitionWrapper duration={5000}><ForgotPassword /></PageTransitionWrapper>
       },
       // Legacy route for backward compatibility
       {
-        path: "Zyndex/Log-In",
-        element: <Navigate to="/Zyndex/User/Log-In" replace />
+        path: "Learnx/Log-In",
+        element: <Navigate to="/Learnx/User/Log-In" replace />
       },
       {
         path: "admin-request",
-        element: <Navigate to="/Zyndex/Admin/Sign-Up" replace />
+        element: <Navigate to="/Learnx/Admin/Sign-Up" replace />
       },
       {
-        path: "Zyndex/About/About-Us",
+        path: "Learnx/About/About-Us",
         element: <PageTransitionWrapper duration={5000}><About /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/About/Contact",
+        path: "Learnx/About/Contact",
         element: <PageTransitionWrapper duration={5000}><Contact /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Contact/Contact-Us",
+        path: "Learnx/Contact/Contact-Us",
         element: <PageTransitionWrapper duration={5000}><Contact /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Resources/Browse",
+        path: "Learnx/Resources/Browse",
         element: <PageTransitionWrapper duration={5000}><Browse /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Resources/Categories",
+        path: "Learnx/Resources/Categories",
         element: <PageTransitionWrapper duration={5000}><BrowseCategory /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Browse-Category/:category",
+        path: "Learnx/Browse-Category/:category",
         element: <PageTransitionWrapper duration={5000}><BrowseCategory /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Help-Center",
+        path: "Learnx/Help-Center",
         element: <PageTransitionWrapper duration={5000}><HelpCenter /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Support/Help-Center",
+        path: "Learnx/Support/Help-Center",
         element: <PageTransitionWrapper duration={5000}><HelpCenter /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/FAQ",
+        path: "Learnx/FAQ",
         element: <PageTransitionWrapper duration={5000}><FAQ /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Support/FAQ",
+        path: "Learnx/Support/FAQ",
         element: <PageTransitionWrapper duration={5000}><FAQ /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Privacy-Policy",
+        path: "Learnx/Privacy-Policy",
         element: <PageTransitionWrapper duration={5000}><Privacy /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Legal/Privacy",
+        path: "Learnx/Legal/Privacy",
         element: <PageTransitionWrapper duration={5000}><Privacy /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Terms-of-Service",
+        path: "Learnx/Terms-of-Service",
         element: <PageTransitionWrapper duration={5000}><Terms /></PageTransitionWrapper>
       },
       {
-        path: "Zyndex/Legal/Terms",
+        path: "Learnx/Legal/Terms",
         element: <PageTransitionWrapper duration={5000}><Terms /></PageTransitionWrapper>
       },
       // Admin Routes
       {
-        path: "Zyndex/Admin/:name/:email/Dashboard",
+        path: "Learnx/Admin/:name/:email/Dashboard",
         element: <ProtectedRoute role="admin"><PageTransitionWrapper duration={5000}><AdminDashboard /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/Admin/:name/:email/Upload-Resource",
+        path: "Learnx/Admin/:name/:email/Upload-Resource",
         element: <ProtectedRoute role="admin"><PageTransitionWrapper duration={5000}><UploadResource /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/Admin/:name/:email/Resource-Management",
+        path: "Learnx/Admin/:name/:email/Resource-Management",
         element: <ProtectedRoute role="admin"><PageTransitionWrapper duration={5000}><ResourceManagement /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/Admin/:name/:email/User-Access",
+        path: "Learnx/Admin/:name/:email/User-Access",
         element: <ProtectedRoute role="admin"><PageTransitionWrapper duration={5000}><UserAccessManagement /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/Admin/:name/:email/Feedback-Review",
+        path: "Learnx/Admin/:name/:email/Feedback-Review",
         element: <ProtectedRoute role="admin"><PageTransitionWrapper duration={5000}><FeedbackReview /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/Admin/:name/:email/Profile",
+        path: "Learnx/Admin/:name/:email/Profile",
         element: <ProtectedRoute role="admin"><PageTransitionWrapper duration={5000}><AdminProfile /></PageTransitionWrapper></ProtectedRoute>
       },
       // User Routes
       {
-        path: "Zyndex/User/:name/:email/Home",
+        path: "Learnx/User/:name/:email/Home",
         element: <ProtectedRoute role="user"><PageTransitionWrapper duration={5000}><UserHome /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/User/:name/:email/Search",
+        path: "Learnx/User/:name/:email/Search",
         element: <ProtectedRoute role="user"><PageTransitionWrapper duration={5000}><SearchResults /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/User/:name/:email/Resource/:id",
+        path: "Learnx/User/:name/:email/Resource/:id",
         element: <ProtectedRoute role="user"><PageTransitionWrapper duration={5000}><ResourceDetail /></PageTransitionWrapper></ProtectedRoute>
       },
       {
-        path: "Zyndex/User/:name/:email/Profile",
+        path: "Learnx/User/:name/:email/Profile",
         element: <ProtectedRoute role="user"><PageTransitionWrapper duration={5000}><UserProfile /></PageTransitionWrapper></ProtectedRoute>
       }
     ]
   }
 ]);
+

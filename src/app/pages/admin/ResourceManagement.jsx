@@ -178,7 +178,7 @@ export default function ResourceManagement() {
             <h1 className="text-2xl font-semibold text-gray-900">Resource Management</h1>
             <p className="text-gray-600 mt-1">Create, edit, and delete PDFs/articles from one place. Showing {resources.length} resources.</p>
           </div>
-          <button onClick={openCreateModal} className="flex items-center gap-2 px-4 py-2.5 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition-colors">
+          <button onClick={openCreateModal} className="flex items-center gap-2 px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
             <Plus className="size-5" />
             Add New Resource
           </button>
@@ -189,7 +189,7 @@ export default function ResourceManagement() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-gray-400" />
             <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder="Search resources..." className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg" />
           </div>
-          <button type="submit" className="px-4 py-2.5 bg-orange-600 text-white rounded-lg">Search</button>
+          <button type="submit" className="px-4 py-2.5 bg-blue-600 text-white rounded-lg">Search</button>
         </form>
 
         <div className="bg-white rounded-xl shadow-md overflow-hidden">
@@ -215,7 +215,7 @@ export default function ResourceManagement() {
                     <td className="py-4 px-6">{resource.type}</td>
                     <td className="py-4 px-6">
                       <div className="flex items-center gap-2">
-                        <button onClick={() => openEditModal(resource)} className="p-2 hover:bg-orange-50 text-orange-600 rounded-lg transition-colors"><Edit className="size-4" /></button>
+                        <button onClick={() => openEditModal(resource)} className="p-2 hover:bg-blue-50 text-blue-600 rounded-lg transition-colors"><Edit className="size-4" /></button>
                         <button onClick={() => handleDelete(resource.id)} className="p-2 hover:bg-red-50 text-red-600 rounded-lg transition-colors"><Trash2 className="size-4" /></button>
                       </div>
                     </td>
@@ -274,18 +274,18 @@ export default function ResourceManagement() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">File</label>
-                    <label className="flex items-center justify-center gap-3 p-8 border-2 border-dashed border-gray-300 rounded-xl cursor-pointer hover:border-orange-500 transition-colors">
-                      <UploadIcon className="size-6 text-orange-600" />
+                    <label className="flex items-center justify-center gap-3 p-8 border-2 border-dashed border-gray-300 rounded-xl cursor-pointer hover:border-blue-500 transition-colors">
+                      <UploadIcon className="size-6 text-blue-600" />
                       <span>{createResource.file ? createResource.file.name : 'Choose a file to upload'}</span>
                       <input type="file" accept=".pdf,.doc,.docx,.txt" onChange={(e) => setCreateResource((prev) => ({ ...prev, file: e.target.files?.[0] || null }))} className="hidden" required />
                     </label>
                   </div>
 
-                  {createStatus && <p className="text-sm text-orange-600">{createStatus}</p>}
+                  {createStatus && <p className="text-sm text-blue-600">{createStatus}</p>}
 
                   <div className="flex items-center gap-3 pt-2">
                     <button type="button" onClick={closeCreateModal} className="flex-1 px-4 py-2.5 border border-gray-300 rounded-lg font-medium hover:bg-gray-50">Cancel</button>
-                    <button type="submit" disabled={uploading} className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition-colors disabled:opacity-60">
+                    <button type="submit" disabled={uploading} className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:opacity-60">
                       <File className="size-4" />
                       {uploading ? 'Uploading...' : 'Add Resource'}
                     </button>
@@ -345,7 +345,7 @@ export default function ResourceManagement() {
                   )}
                   <div className="flex items-center gap-3 pt-4">
                     <button type="button" onClick={closeEditModal} className="flex-1 px-4 py-2.5 border border-gray-300 rounded-lg font-medium hover:bg-gray-50">Cancel</button>
-                    <button type="submit" className="flex-1 px-4 py-2.5 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700">Update</button>
+                    <button type="submit" className="flex-1 px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700">Update</button>
                   </div>
                 </form>
               </div>
@@ -356,3 +356,4 @@ export default function ResourceManagement() {
     </AdminLayout>
   );
 }
+

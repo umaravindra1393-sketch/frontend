@@ -127,7 +127,7 @@ export default function ResourceDetail() {
                       <Heart className={`size-5 ${isFavorite ? 'fill-current' : ''}`} />
                       {isFavorite ? 'Favourite' : 'Add Favourite'}
                     </button>
-                    <button onClick={handleDownload} className="flex items-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition-colors">
+                    <button onClick={handleDownload} className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
                       <Download className="size-5" />
                       Download
                     </button>
@@ -158,7 +158,7 @@ export default function ResourceDetail() {
                       href={previewUrlWithVersion}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 border border-orange-200 text-orange-700 rounded-lg font-medium hover:bg-orange-50 transition-colors"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-blue-200 text-blue-700 rounded-lg font-medium hover:bg-blue-50 transition-colors"
                     >
                       <ExternalLink className="size-4" />
                       Open Full Preview
@@ -181,14 +181,14 @@ export default function ResourceDetail() {
                       href={previewUrlWithVersion}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition-colors"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
                     >
                       <ExternalLink className="size-4" />
                       Open Preview
                     </a>
                   </div>
                 ) : (
-                  <div className="border border-amber-200 rounded-xl p-6 bg-amber-50">
+                  <div className="border border-sky-200 rounded-xl p-6 bg-sky-50">
                     <p className="text-amber-800">
                       No preview file is attached yet. Upload a PDF or article file from the admin panel to preview it here.
                     </p>
@@ -217,13 +217,13 @@ export default function ResourceDetail() {
                       onChange={(e) => setFeedback(e.target.value)}
                       placeholder="Share your thoughts about this resource..."
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                     />
                   </div>
 
-                  {message && <p className="text-sm text-orange-600">{message}</p>}
+                  {message && <p className="text-sm text-blue-600">{message}</p>}
 
-                  <button type="submit" className="flex items-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition-colors">
+                  <button type="submit" className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
                     <Send className="size-4" />
                     Submit Feedback
                   </button>
@@ -236,3 +236,4 @@ export default function ResourceDetail() {
     </UserLayout>
   );
 }
+

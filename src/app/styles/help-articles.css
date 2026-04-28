@@ -12,7 +12,7 @@
   color: #0f172a;
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
-  border-bottom: 3px solid #f97316;
+  border-bottom: 3px solid #2563eb;
 }
 
 .article-intro {
@@ -56,7 +56,7 @@
 }
 
 .article-list li strong {
-  color: #f97316;
+  color: #2563eb;
   font-weight: 600;
 }
 
@@ -71,8 +71,8 @@
 }
 
 .tip-box {
-  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
-  border-left: 4px solid #f97316;
+  background: linear-gradient(135deg, #eff6ff 0%, #ffedd5 100%);
+  border-left: 4px solid #2563eb;
   padding: 1.25rem;
   border-radius: 0.75rem;
   margin: 1.5rem 0;
@@ -82,7 +82,7 @@
 .tip-heading {
   font-size: 1rem;
   font-weight: 700;
-  color: #ea580c;
+  color: #1d4ed8;
   margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@
 }
 
 .tip-box p, .tip-box ul {
-  color: #78350f;
+  color: #1e3a8a;
   font-size: 0.9375rem;
   margin: 0;
 }
@@ -159,7 +159,7 @@
 .subsection {
   margin-top: 1.5rem;
   padding-left: 1rem;
-  border-left: 2px solid #fed7aa;
+  border-left: 2px solid #bfdbfe;
 }
 
 /* Make sure article content headings are styled */
@@ -169,7 +169,7 @@
   color: #0f172a;
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
-  border-bottom: 3px solid #f97316;
+  border-bottom: 3px solid #2563eb;
 }
 
 .article-content h3 {
@@ -207,7 +207,7 @@
 }
 
 .article-content strong {
-  color: #f97316;
+  color: #2563eb;
   font-weight: 600;
 }
 
@@ -229,3 +229,4 @@
     padding: 1rem;
   }
 }
+

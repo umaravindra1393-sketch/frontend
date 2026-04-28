@@ -81,7 +81,7 @@ export default function SearchResults() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Resource Type</label>
-                  <select value={selectedType} onChange={(e) => setSelectedType(e.target.value)} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                  <select value={selectedType} onChange={(e) => setSelectedType(e.target.value)} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="all">All Types</option>
                     <option value="pdf">PDF</option>
                     <option value="article">Article</option>
@@ -89,7 +89,7 @@ export default function SearchResults() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Sort By</label>
-                  <select value={selectedSort} onChange={(e) => setSelectedSort(e.target.value)} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                  <select value={selectedSort} onChange={(e) => setSelectedSort(e.target.value)} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="recent">Most Recent</option>
                     <option value="popular">Most Popular</option>
                     <option value="title">Title A-Z</option>
@@ -116,7 +116,7 @@ export default function SearchResults() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.08 }}
-                  onClick={() => navigate(`/Zyndex/User/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource/${resource.id}`)}
+                  onClick={() => navigate(`/Learnx/User/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource/${resource.id}`)}
                 >
                   <div className="flex justify-end mb-2">
                     <button
@@ -135,7 +135,7 @@ export default function SearchResults() {
                       <span>Author of Resource: {resource.subject}</span>
                       <span>{resource.type}</span>
                     </div>
-                    <span className="text-orange-600 font-medium">View</span>
+                    <span className="text-blue-600 font-medium">View</span>
                   </div>
                 </motion.div>
               ))}
@@ -146,3 +146,5 @@ export default function SearchResults() {
     </UserLayout>
   );
 }
+
+

@@ -24,7 +24,7 @@ export default function UserLayout({ children }) {
   // Get dynamic URL parts
   const userName = getUrlSafeName();
   const userEmail = getUrlSafeEmail();
-  const baseUrl = `/Zyndex/User/${userName}/${userEmail}`;
+  const baseUrl = `/Learnx/User/${userName}/${userEmail}`;
 
   // Check if we're not on the home page
   const showBackButton = !location.pathname.includes('/Home');
@@ -69,8 +69,8 @@ export default function UserLayout({ children }) {
             to={`${baseUrl}/Home`} 
             className="flex items-center gap-2 hover:scale-105 transition-transform"
           >
-            <BookOpen className="size-6 text-orange-600" />
-            <span className="text-xl font-semibold text-gray-900">Zyndex</span>
+            <BookOpen className="size-6 text-blue-600" />
+            <span className="text-xl font-semibold text-gray-900">Learnx</span>
           </Link>
 
           {/* Live Search Bar */}
@@ -82,7 +82,7 @@ export default function UserLayout({ children }) {
                 value={searchQuery}
                 onChange={handleSearchChange}
                 placeholder="Search resources..."
-                className="w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                className="w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
               {searchQuery && (
                 <button
@@ -153,7 +153,7 @@ export default function UserLayout({ children }) {
                 to={`${baseUrl}/Home`}
                 className={`text-sm font-medium transition-colors ${
                   location.pathname.includes('/Home') 
-                    ? 'text-orange-600 font-semibold' 
+                    ? 'text-blue-600 font-semibold' 
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
@@ -165,7 +165,7 @@ export default function UserLayout({ children }) {
                 to={`${baseUrl}/Profile`}
                 className={`text-sm font-medium transition-colors flex items-center gap-2 ${
                   location.pathname.includes('/Profile') 
-                    ? 'text-orange-600 font-semibold' 
+                    ? 'text-blue-600 font-semibold' 
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
@@ -202,11 +202,11 @@ export default function UserLayout({ children }) {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center justify-center gap-2 mb-4">
-              <BookOpen className="size-6 text-orange-500" />
-              <span className="text-xl font-semibold">Zyndex</span>
+              <BookOpen className="size-6 text-blue-500" />
+              <span className="text-xl font-semibold">Learnx</span>
             </div>
             <p className="text-sm text-gray-400">
-              © 2026 Zyndex. All rights reserved.
+              © 2026 Learnx. All rights reserved.
             </p>
           </motion.div>
         </div>
@@ -214,3 +214,4 @@ export default function UserLayout({ children }) {
     </div>
   );
 }
+

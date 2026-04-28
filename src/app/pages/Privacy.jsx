@@ -10,15 +10,15 @@ export default function Privacy() {
       content: [
         {
           subtitle: 'Purpose of this Privacy Policy',
-          text: 'This Privacy Policy describes how Zyndex ("we", "us", or "our") collects, uses, and protects your personal information when you use our educational resource library platform. We are committed to ensuring that your privacy is protected and that we comply with applicable data protection laws.'
+          text: 'This Privacy Policy describes how Learnx ("we", "us", or "our") collects, uses, and protects your personal information when you use our educational resource library platform. We are committed to ensuring that your privacy is protected and that we comply with applicable data protection laws.'
         },
         {
           subtitle: 'Who This Policy Applies To',
-          text: 'This policy applies to all visitors, registered users, contributors, and administrators who access or use the Zyndex platform, including our website, mobile applications, and any related services or APIs we provide.'
+          text: 'This policy applies to all visitors, registered users, contributors, and administrators who access or use the Learnx platform, including our website, mobile applications, and any related services or APIs we provide.'
         },
         {
           subtitle: 'Platform Covered',
-          text: 'This Privacy Policy covers the Zyndex educational resource library accessible through our website (zyndex.com), mobile applications (iOS and Android), and all associated APIs and services.'
+          text: 'This Privacy Policy covers the Learnx educational resource library accessible through our website (learnx.com), mobile applications (iOS and Android), and all associated APIs and services.'
         }
       ]
     },
@@ -58,7 +58,7 @@ export default function Privacy() {
         },
         {
           subtitle: 'Third-Party Integrations',
-          text: 'We may receive information from third-party services you connect to your Zyndex account, such as single sign-on providers (Google, Microsoft), payment gateways, analytics tools (Google Analytics), and content delivery networks.'
+          text: 'We may receive information from third-party services you connect to your Learnx account, such as single sign-on providers (Google, Microsoft), payment gateways, analytics tools (Google Analytics), and content delivery networks.'
         }
       ]
     },
@@ -180,7 +180,7 @@ export default function Privacy() {
       content: [
         {
           subtitle: 'Age Restrictions',
-          text: 'Zyndex is intended for users aged 16 and older. We do not knowingly collect personal information from children under 16 years of age. If you are under 16, please do not use our platform or provide any personal information.'
+          text: 'Learnx is intended for users aged 16 and older. We do not knowingly collect personal information from children under 16 years of age. If you are under 16, please do not use our platform or provide any personal information.'
         },
         {
           subtitle: 'Parental Consent',
@@ -194,7 +194,7 @@ export default function Privacy() {
       content: [
         {
           subtitle: 'Disclaimer for External Websites',
-          text: 'Our platform may contain links to third-party websites, services, or resources that are not owned or controlled by Zyndex. This Privacy Policy applies only to information collected by Zyndex. We are not responsible for the privacy practices or content of third-party websites. We encourage you to review the privacy policies of any third-party sites you visit. The inclusion of any link does not imply our endorsement of the linked site.'
+          text: 'Our platform may contain links to third-party websites, services, or resources that are not owned or controlled by Learnx. This Privacy Policy applies only to information collected by Learnx. We are not responsible for the privacy practices or content of third-party websites. We encourage you to review the privacy policies of any third-party sites you visit. The inclusion of any link does not imply our endorsement of the linked site.'
         }
       ]
     },
@@ -228,7 +228,7 @@ export default function Privacy() {
       content: [
         {
           subtitle: 'Privacy Inquiries',
-          text: 'If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:\n\nEmail: lmno1432@gmail.com\nSubject Line: Privacy Inquiry - Zyndex\n\nWe will respond to your inquiry within 30 days of receipt. For urgent privacy matters, please clearly mark your communication as "URGENT: Privacy Matter" in the subject line.'
+          text: 'If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:\n\nEmail: lmno1432@gmail.com\nSubject Line: Privacy Inquiry - Learnx\n\nWe will respond to your inquiry within 30 days of receipt. For urgent privacy matters, please clearly mark your communication as "URGENT: Privacy Matter" in the subject line.'
         },
         {
           subtitle: 'Data Protection Officer',
@@ -240,7 +240,7 @@ export default function Privacy() {
 
   return (
     <PublicLayout>
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-amber-50 py-16 px-6">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-sky-50 py-16 px-6">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <motion.div
@@ -249,16 +249,16 @@ export default function Privacy() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center justify-center size-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-lg mb-6">
+            <div className="inline-flex items-center justify-center size-20 bg-gradient-to-br from-blue-500 to-red-600 rounded-2xl shadow-lg mb-6">
               <Shield className="size-10 text-white" />
             </div>
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
+            <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent mb-4">
               Privacy Policy
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your privacy is critically important to us. This policy explains how we collect, use, protect, and handle your personal information.
             </p>
-            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
+            <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
               <FileText className="size-4" />
               Last Updated: January 28, 2026
             </div>
@@ -269,7 +269,7 @@ export default function Privacy() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-8 mb-12 text-white shadow-xl"
+            className="bg-gradient-to-r from-blue-500 to-red-600 rounded-2xl p-8 mb-12 text-white shadow-xl"
           >
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
@@ -277,8 +277,8 @@ export default function Privacy() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">Your Data Protection Rights</h3>
-                <p className="text-orange-50 leading-relaxed">
-                  Zyndex is committed to protecting your privacy and ensuring transparency in how we handle your data. 
+                <p className="text-blue-50 leading-relaxed">
+                  Learnx is committed to protecting your privacy and ensuring transparency in how we handle your data. 
                   We comply with GDPR, CCPA, and other applicable data protection regulations. You have the right to 
                   access, correct, delete, or export your personal data at any time. This platform is NOT intended for 
                   collecting Personally Identifiable Information (PII) or sensitive data beyond what is necessary for 
@@ -298,9 +298,9 @@ export default function Privacy() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="bg-gradient-to-r from-orange-50 to-amber-50 px-8 py-6">
+                <div className="bg-gradient-to-r from-blue-50 to-sky-50 px-8 py-6">
                   <div className="flex items-center gap-4">
-                    <div className="flex-shrink-0 size-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-md">
+                    <div className="flex-shrink-0 size-12 bg-gradient-to-br from-blue-500 to-red-600 rounded-xl flex items-center justify-center shadow-md">
                       <section.icon className="size-6 text-white" />
                     </div>
                     <h2 className="text-2xl font-bold text-gray-900">{section.title}</h2>
@@ -310,7 +310,7 @@ export default function Privacy() {
                   {section.content.map((item, idx) => (
                     <div key={idx} className="space-y-3">
                       {item.subtitle && (
-                        <h3 className="text-lg font-semibold text-orange-600">{item.subtitle}</h3>
+                        <h3 className="text-lg font-semibold text-blue-600">{item.subtitle}</h3>
                       )}
                       <p className="text-gray-700 leading-relaxed whitespace-pre-line">{item.text}</p>
                     </div>
@@ -325,17 +325,17 @@ export default function Privacy() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-10 text-center text-white shadow-2xl"
+            className="mt-16 bg-gradient-to-r from-blue-500 to-red-600 rounded-2xl p-10 text-center text-white shadow-2xl"
           >
             <Mail className="size-16 mx-auto mb-6" />
             <h2 className="text-3xl font-bold mb-4">Questions About Your Privacy?</h2>
-            <p className="text-orange-50 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-blue-50 text-lg mb-8 max-w-2xl mx-auto">
               We're here to help. If you have any questions, concerns, or would like to exercise your data protection rights, 
               please don't hesitate to contact us.
             </p>
             <a
-              href="mailto:lmno1432@gmail.com?subject=Privacy%20Inquiry%20-%20Zyndex"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-orange-600 rounded-xl font-semibold hover:bg-orange-50 transition-all shadow-lg hover:shadow-xl"
+              href="mailto:lmno1432@gmail.com?subject=Privacy%20Inquiry%20-%20Learnx"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl"
             >
               <Mail className="size-5" />
               Contact Privacy Team
@@ -346,3 +346,4 @@ export default function Privacy() {
     </PublicLayout>
   );
 }
+

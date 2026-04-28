@@ -11,8 +11,8 @@ export default function BrowseCategory() {
       title: 'Science',
       description: 'Explore physics, chemistry, biology, and more',
       icon: FlaskConical,
-      gradient: 'from-orange-500 to-amber-500',
-      bgGradient: 'from-orange-50 to-amber-50',
+      gradient: 'from-blue-500 to-sky-500',
+      bgGradient: 'from-blue-50 to-sky-50',
     },
     {
       title: 'Mathematics',
@@ -32,8 +32,8 @@ export default function BrowseCategory() {
       title: 'History',
       description: 'Discover the past and its impact on today',
       icon: Landmark,
-      gradient: 'from-orange-500 to-red-500',
-      bgGradient: 'from-orange-50 to-red-50',
+      gradient: 'from-blue-500 to-red-500',
+      bgGradient: 'from-blue-50 to-red-50',
     },
   ];
 
@@ -59,15 +59,15 @@ export default function BrowseCategory() {
               className="inline-block mb-6"
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur-2xl opacity-30" />
-                <div className="relative bg-gradient-to-r from-orange-600 to-red-600 p-4 rounded-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl blur-2xl opacity-30" />
+                <div className="relative bg-gradient-to-r from-blue-600 to-red-600 p-4 rounded-2xl">
                   <BookOpen className="size-12 text-white" />
                 </div>
               </div>
             </motion.div>
 
             <h1 className="text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Browse by Category
               </span>
             </h1>
@@ -133,10 +133,10 @@ export default function BrowseCategory() {
             transition={{ delay: 0.6 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl blur-2xl opacity-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-3xl blur-2xl opacity-10" />
             <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl">
               <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                <div className="flex-shrink-0 p-3 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl">
+                <div className="flex-shrink-0 p-3 bg-gradient-to-br from-blue-500 to-red-600 rounded-xl">
                   <Lock className="size-6 text-white" />
                 </div>
                 <div className="flex-1">
@@ -148,13 +148,13 @@ export default function BrowseCategory() {
                   </p>
                 </div>
                 <motion.a
-                  href="/Zyndex/Log-In"
+                  href="/Learnx/Log-In"
                   className="relative group flex-shrink-0"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl blur opacity-50 group-hover:opacity-75 transition-opacity" />
-                  <div className="relative px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl whitespace-nowrap shadow-lg shadow-orange-600/30">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl blur opacity-50 group-hover:opacity-75 transition-opacity" />
+                  <div className="relative px-6 py-3 bg-gradient-to-r from-blue-600 to-red-600 text-white font-semibold rounded-xl whitespace-nowrap shadow-lg shadow-blue-600/30">
                     Login Now
                   </div>
                 </motion.a>
@@ -197,8 +197,8 @@ export default function BrowseCategory() {
                 className="mb-6"
               >
                 <div className="relative inline-flex">
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur-2xl opacity-30" />
-                  <div className="relative bg-gradient-to-r from-orange-600 to-red-600 p-4 rounded-2xl">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl blur-2xl opacity-30" />
+                  <div className="relative bg-gradient-to-r from-blue-600 to-red-600 p-4 rounded-2xl">
                     <Lock className="size-10 text-white" />
                   </div>
                 </div>
@@ -215,13 +215,13 @@ export default function BrowseCategory() {
               {/* Buttons */}
               <div className="flex flex-col gap-3">
                 <motion.a
-                  href="/Zyndex/Log-In"
+                  href="/Learnx/Log-In"
                   className="relative group"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-xl blur opacity-50 group-hover:opacity-75 transition-opacity" />
-                  <div className="relative px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-xl text-center shadow-lg shadow-orange-600/30">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-xl blur opacity-50 group-hover:opacity-75 transition-opacity" />
+                  <div className="relative px-6 py-3 bg-gradient-to-r from-blue-600 to-red-600 text-white font-semibold rounded-xl text-center shadow-lg shadow-blue-600/30">
                     Go to Login
                   </div>
                 </motion.a>
@@ -240,3 +240,4 @@ export default function BrowseCategory() {
     </PublicLayout>
   );
 }
+

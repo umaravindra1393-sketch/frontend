@@ -142,7 +142,7 @@ export default function UserAccessManagement() {
             <h1 className="text-2xl font-semibold text-gray-900">User Access Management</h1>
             <p className="text-gray-600 mt-1">Create, read, update, and delete users. Showing {users.length} users.</p>
           </div>
-          <button onClick={openCreateModal} className="flex items-center gap-2 px-4 py-2.5 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition-colors">
+          <button onClick={openCreateModal} className="flex items-center gap-2 px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
             <Plus className="size-5" />
             Add User
           </button>
@@ -178,7 +178,7 @@ export default function UserAccessManagement() {
                     <td className="py-4 px-6">{new Date(user.dateJoined).toLocaleDateString()}</td>
                     <td className="py-4 px-6">
                       <div className="flex items-center gap-2">
-                        <button onClick={() => openEditModal(user)} className="p-2 hover:bg-orange-50 text-orange-600 rounded-lg transition-colors"><Edit className="size-4" /></button>
+                        <button onClick={() => openEditModal(user)} className="p-2 hover:bg-blue-50 text-blue-600 rounded-lg transition-colors"><Edit className="size-4" /></button>
                         <button onClick={() => openResetModal(user)} className="p-2 hover:bg-blue-50 text-blue-600 rounded-lg transition-colors" title="Reset Password"><KeyRound className="size-4" /></button>
                         <button onClick={() => handleDeleteUser(user.id)} className="p-2 hover:bg-red-50 text-red-600 rounded-lg transition-colors"><Trash2 className="size-4" /></button>
                       </div>
@@ -211,13 +211,13 @@ export default function UserAccessManagement() {
                     <option value="admin">Admin</option>
                   </select>
                   {isEditing && (
-                    <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">
+                    <p className="text-sm text-amber-700 bg-sky-50 border border-sky-200 rounded-lg px-3 py-2">
                       Existing passwords cannot be viewed. Enter a new password here only if you want to reset it.
                     </p>
                   )}
                   <div className="flex items-center gap-3 pt-4">
                     <button type="button" onClick={closeModal} className="flex-1 px-4 py-2.5 border border-gray-300 rounded-lg font-medium hover:bg-gray-50">Cancel</button>
-                    <button type="submit" className="flex-1 px-4 py-2.5 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700">{isEditing ? 'Update' : 'Create'}</button>
+                    <button type="submit" className="flex-1 px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700">{isEditing ? 'Update' : 'Create'}</button>
                   </div>
                 </form>
               </div>
@@ -268,7 +268,7 @@ export default function UserAccessManagement() {
                       {showResetConfirmPassword ? <EyeOff className="size-4" /> : <Eye className="size-4" />}
                     </button>
                   </div>
-                  <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">
+                  <p className="text-sm text-amber-700 bg-sky-50 border border-sky-200 rounded-lg px-3 py-2">
                     This will replace the user's current password immediately.
                   </p>
                   <div className="flex items-center gap-3 pt-2">
@@ -284,3 +284,4 @@ export default function UserAccessManagement() {
     </AdminLayout>
   );
 }
+

@@ -9,12 +9,12 @@ function LogoutAnimation() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-orange-50"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-50"
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -47,7 +47,7 @@ function LogoutAnimation() {
           <div className="relative">
             {/* Glow Effect */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur-2xl"
+              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl blur-2xl"
               animate={{
                 opacity: [0.3, 0.6, 0.3],
                 scale: [1, 1.2, 1],
@@ -60,7 +60,7 @@ function LogoutAnimation() {
             />
             
             {/* Icon Container */}
-            <div className="relative bg-gradient-to-br from-orange-600 to-red-600 p-6 rounded-2xl shadow-2xl">
+            <div className="relative bg-gradient-to-br from-blue-600 to-red-600 p-6 rounded-2xl shadow-2xl">
               <motion.div
                 animate={{
                   rotate: [0, 360],
@@ -79,8 +79,8 @@ function LogoutAnimation() {
 
         {/* Brand */}
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-            Zyndex
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
+            Learnx
           </h1>
           <p className="text-slate-600 font-medium text-sm">Logging out...</p>
         </div>
@@ -89,7 +89,7 @@ function LogoutAnimation() {
         <div className="w-56 mx-auto">
           <div className="h-1.5 bg-slate-200 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-orange-600 to-red-600 rounded-full"
+              className="h-full bg-gradient-to-r from-blue-600 to-red-600 rounded-full"
               initial={{ width: '0%' }}
               animate={{ width: '100%' }}
               transition={{
@@ -124,3 +124,5 @@ export default function RootLayout() {
     </AuthProvider>
   );
 }
+
+

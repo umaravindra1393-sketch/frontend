@@ -13,13 +13,13 @@ const categoryIcons = {
   mathematics: { icon: Calculator, gradient: 'from-green-500 to-emerald-500', bgColor: 'bg-green-100' },
   maths: { icon: Calculator, gradient: 'from-green-500 to-emerald-500', bgColor: 'bg-green-100' },
   physics: { icon: Atom, gradient: 'from-cyan-500 to-sky-500', bgColor: 'bg-cyan-100' },
-  chemistry: { icon: FlaskConical, gradient: 'from-orange-500 to-amber-500', bgColor: 'bg-orange-100' },
+  chemistry: { icon: FlaskConical, gradient: 'from-blue-500 to-sky-500', bgColor: 'bg-blue-100' },
   'computer science': { icon: BookOpen, gradient: 'from-slate-700 to-slate-500', bgColor: 'bg-slate-100' },
   biology: { icon: Microscope, gradient: 'from-lime-500 to-emerald-500', bgColor: 'bg-lime-100' },
-  economics: { icon: Landmark, gradient: 'from-amber-500 to-orange-500', bgColor: 'bg-amber-100' },
+  economics: { icon: Landmark, gradient: 'from-sky-500 to-blue-500', bgColor: 'bg-sky-100' },
   science: { icon: FlaskConical, gradient: 'from-blue-500 to-cyan-500', bgColor: 'bg-blue-100' },
   literature: { icon: BookOpen, gradient: 'from-purple-500 to-pink-500', bgColor: 'bg-purple-100' },
-  history: { icon: Landmark, gradient: 'from-orange-500 to-red-500', bgColor: 'bg-orange-100' },
+  history: { icon: Landmark, gradient: 'from-blue-500 to-red-500', bgColor: 'bg-blue-100' },
 };
 
 const preferredCategoryOrder = ['AI', 'ML', 'Mathematics', 'Maths', 'Physics', 'Chemistry', 'Computer Science', 'Biology', 'Economics', 'History', 'Literature'];
@@ -77,7 +77,7 @@ export default function UserHome() {
   const handleCategoryClick = (category) => {
     const userName = getUrlSafeName();
     const userEmail = getUrlSafeEmail();
-    navigate(`/Zyndex/User/${userName}/${userEmail}/Search?category=${category.toLowerCase()}`);
+    navigate(`/Learnx/User/${userName}/${userEmail}/Search?category=${category.toLowerCase()}`);
   };
 
   const handleSearch = (e) => {
@@ -85,7 +85,7 @@ export default function UserHome() {
     if (!searchQuery.trim()) return;
     const userName = getUrlSafeName();
     const userEmail = getUrlSafeEmail();
-    navigate(`/Zyndex/User/${userName}/${userEmail}/Search?query=${encodeURIComponent(searchQuery)}`);
+    navigate(`/Learnx/User/${userName}/${userEmail}/Search?query=${encodeURIComponent(searchQuery)}`);
   };
 
   const toggleFavorite = async (e, resourceId) => {
@@ -131,16 +131,16 @@ export default function UserHome() {
 
   return (
     <UserLayout>
-      <div className="py-12 px-6 min-h-screen bg-gradient-to-br from-orange-50 via-amber-50/30 to-orange-50">
+      <div className="py-12 px-6 min-h-screen bg-gradient-to-br from-blue-50 via-sky-50/30 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <motion.div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-6" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}>
+            <motion.div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}>
               <Sparkles className="size-4" />
               Your Learning Hub
             </motion.div>
 
             <h1 className="text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Welcome {user?.name || 'User'}
               </span>
             </h1>
@@ -155,10 +155,10 @@ export default function UserHome() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search by title, author of resource, or keyword"
-                  className="w-full pl-12 pr-4 py-4 rounded-2xl border border-orange-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full pl-12 pr-4 py-4 rounded-2xl border border-blue-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-              <button type="submit" className="px-6 py-4 rounded-2xl bg-orange-600 text-white font-semibold hover:bg-orange-700 transition-colors">
+              <button type="submit" className="px-6 py-4 rounded-2xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors">
                 Search
               </button>
             </form>
@@ -168,7 +168,7 @@ export default function UserHome() {
             <div className="flex items-center gap-3 mb-8">
               <h2 className="text-3xl font-bold text-gray-900">Browse by Category</h2>
               <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}>
-                <TrendingUp className="size-8 text-orange-600" />
+                <TrendingUp className="size-8 text-blue-600" />
               </motion.div>
             </div>
 
@@ -198,7 +198,7 @@ export default function UserHome() {
                       <p className="text-sm text-gray-600 mb-4 leading-relaxed">Explore curated materials for {category.title}.</p>
                       <div className="flex items-center justify-between">
                         <p className="text-xs text-gray-500 font-medium">{category.count}</p>
-                        <span className="text-orange-600 font-semibold text-sm">Explore</span>
+                        <span className="text-blue-600 font-semibold text-sm">Explore</span>
                       </div>
                     </div>
                   </motion.div>
@@ -212,7 +212,7 @@ export default function UserHome() {
             {recentViews.length === 0 ? (
               <div className="relative bg-white rounded-3xl shadow-xl p-12 text-center overflow-hidden border border-gray-100 mb-16">
                 <div className="relative">
-                  <BookOpen className="size-10 text-orange-600 mx-auto mb-6" />
+                  <BookOpen className="size-10 text-blue-600 mx-auto mb-6" />
                   <p className="text-xl font-bold text-gray-900 mb-2">No recent views yet</p>
                   <p className="text-gray-600">Resources you open will appear here only for your account.</p>
                 </div>
@@ -227,7 +227,7 @@ export default function UserHome() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.08 }}
                     whileHover={{ y: -8 }}
-                    onClick={() => navigate(`/Zyndex/User/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource/${resource.id}`)}
+                    onClick={() => navigate(`/Learnx/User/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource/${resource.id}`)}
                   >
                     <div className="relative">
                       <button
@@ -242,7 +242,7 @@ export default function UserHome() {
                       <p className="text-sm text-gray-500 mb-4">Author of Resource: {resource.author || resource.subject}</p>
                       <div className="flex items-center justify-between">
                         <span className="text-xs text-gray-500 font-medium px-3 py-1 bg-gray-100 rounded-lg">{resource.category}</span>
-                        <span className="text-sm text-orange-600 font-bold">Viewed</span>
+                        <span className="text-sm text-blue-600 font-bold">Viewed</span>
                       </div>
                     </div>
                   </motion.div>
@@ -256,7 +256,7 @@ export default function UserHome() {
             {resources.length === 0 ? (
               <div className="relative bg-white rounded-3xl shadow-xl p-20 text-center overflow-hidden border border-gray-100">
                 <div className="relative">
-                  <BookOpen className="size-10 text-orange-600 mx-auto mb-6" />
+                  <BookOpen className="size-10 text-blue-600 mx-auto mb-6" />
                   <p className="text-xl font-bold text-gray-900 mb-2">No resources available</p>
                   <p className="text-gray-600">Resources will appear here once they are uploaded</p>
                 </div>
@@ -271,7 +271,7 @@ export default function UserHome() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     whileHover={{ y: -8 }}
-                    onClick={() => navigate(`/Zyndex/User/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource/${resource.id}`)}
+                    onClick={() => navigate(`/Learnx/User/${getUrlSafeName()}/${getUrlSafeEmail()}/Resource/${resource.id}`)}
                   >
                     <div className="relative">
                       <button
@@ -286,7 +286,7 @@ export default function UserHome() {
                       <p className="text-sm text-gray-500 mb-4">Author of Resource: {resource.author || resource.subject}</p>
                       <div className="flex items-center justify-between">
                         <span className="text-xs text-gray-500 font-medium px-3 py-1 bg-gray-100 rounded-lg">{resource.category}</span>
-                        <span className="text-sm text-orange-600 font-bold">View</span>
+                        <span className="text-sm text-blue-600 font-bold">View</span>
                       </div>
                     </div>
                   </motion.div>
@@ -299,3 +299,5 @@ export default function UserHome() {
     </UserLayout>
   );
 }
+
+

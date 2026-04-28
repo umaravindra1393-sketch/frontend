@@ -1,4 +1,4 @@
-// Additional 50 Help Articles for Zyndex (Articles 51-100)
+// Additional 50 Help Articles for Learnx (Articles 51-100)
 export const additionalHelpArticles = [
   // Admin Features (15 articles)
   {
@@ -9,7 +9,7 @@ export const additionalHelpArticles = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Uploading Resources as Admin</h2>
-        <p class="article-intro">Admins can upload educational materials to share with the Zyndex community. Here's how:</p>
+        <p class="article-intro">Admins can upload educational materials to share with the Learnx community. Here's how:</p>
         
         <div class="section-block">
           <h3 class="section-heading">Access Upload Page:</h3>
@@ -308,7 +308,7 @@ export const additionalHelpArticles = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Upload Confirmation Experience</h2>
-        <p class="article-intro">After uploading a resource, Zyndex displays a 15-second animated confirmation message.</p>
+        <p class="article-intro">After uploading a resource, Learnx displays a 15-second animated confirmation message.</p>
         
         <div class="section-block">
           <h3 class="section-heading">What Happens:</h3>
@@ -406,7 +406,7 @@ export const additionalHelpArticles = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Content Moderation Standards</h2>
-        <p class="article-intro">Maintain high quality standards for all resources on Zyndex.</p>
+        <p class="article-intro">Maintain high quality standards for all resources on Learnx.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Approval Criteria:</h3>
@@ -476,7 +476,7 @@ export const additionalHelpArticles = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Multi-Admin Collaboration</h2>
-        <p class="article-intro">When multiple admins work on Zyndex, coordination ensures smooth operations.</p>
+        <p class="article-intro">When multiple admins work on Learnx, coordination ensures smooth operations.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Collaboration Best Practices:</h3>
@@ -538,7 +538,7 @@ export const additionalHelpArticles = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Browser Support</h2>
-        <p class="article-intro">Zyndex works best on modern web browsers with JavaScript enabled.</p>
+        <p class="article-intro">Learnx works best on modern web browsers with JavaScript enabled.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Recommended Browsers:</h3>
@@ -690,7 +690,7 @@ export const additionalHelpArticles = [
 
         <div class="tip-box">
           <h4 class="tip-heading">💡 Note:</h4>
-          <p>Clearing cookies will log you out of all websites. You'll need to log back in to Zyndex.</p>
+          <p>Clearing cookies will log you out of all websites. You'll need to log back in to Learnx.</p>
         </div>
       </div>
     `,
@@ -713,7 +713,7 @@ export const additionalHelpArticles = [
             <li>Check spam/junk folder</li>
             <li>Verify email address was typed correctly</li>
             <li>Wait 5-10 minutes for email to arrive</li>
-            <li>Add noreply@zyndex.com to contacts</li>
+            <li>Add noreply@learnx.com to contacts</li>
             <li>Try submitting request again</li>
           </ul>
         </div>
@@ -771,11 +771,11 @@ export const additionalHelpArticles = [
     id: 72,
     category: 'Technical Support',
     title: 'Mobile app experience',
-    description: 'Using Zyndex on mobile devices',
+    description: 'Using Learnx on mobile devices',
     content: `
       <div class="article-content">
         <h2 class="article-heading">Mobile Optimization</h2>
-        <p class="article-intro">Zyndex is fully optimized for mobile devices with responsive design.</p>
+        <p class="article-intro">Learnx is fully optimized for mobile devices with responsive design.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Mobile Features:</h3>
@@ -791,7 +791,7 @@ export const additionalHelpArticles = [
         <div class="section-block">
           <h3 class="section-heading">Mobile Tips:</h3>
           <ul class="article-list">
-            <li>Add Zyndex to home screen for app-like experience</li>
+            <li>Add Learnx to home screen for app-like experience</li>
             <li>Use WiFi for downloading large files</li>
             <li>Enable "Desktop site" if needed</li>
             <li>Update browser for best performance</li>
@@ -806,11 +806,11 @@ export const additionalHelpArticles = [
     id: 73,
     category: 'Technical Support',
     title: 'Slow performance issues',
-    description: 'Speed up Zyndex loading times',
+    description: 'Speed up Learnx loading times',
     content: `
       <div class="article-content">
         <h2 class="article-heading">Performance Optimization</h2>
-        <p class="article-intro">If Zyndex is loading slowly, try these optimization steps:</p>
+        <p class="article-intro">If Learnx is loading slowly, try these optimization steps:</p>
         
         <div class="section-block">
           <h3 class="section-heading">Quick Fixes:</h3>
@@ -1008,7 +1008,7 @@ export const additionalHelpArticles = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Keyboard Shortcuts</h2>
-        <p class="article-intro">Speed up your Zyndex workflow with keyboard shortcuts:</p>
+        <p class="article-intro">Speed up your Learnx workflow with keyboard shortcuts:</p>
         
         <div class="section-block">
           <h3 class="section-heading">General Shortcuts:</h3>
@@ -1040,7 +1040,7 @@ export const additionalHelpArticles = [
     content: `
       <div class="article-content">
         <h2 class="article-heading">Session Management</h2>
-        <p class="article-intro">Zyndex sessions expire after extended inactivity for security.</p>
+        <p class="article-intro">Learnx sessions expire after extended inactivity for security.</p>
         
         <div class="section-block">
           <h3 class="section-heading">Session Details:</h3>
@@ -1060,7 +1060,7 @@ export const additionalHelpArticles = [
         <div class="section-block">
           <h3 class="section-heading">Stay Logged In:</h3>
           <ul class="article-list">
-            <li>Interact with Zyndex regularly</li>
+            <li>Interact with Learnx regularly</li>
             <li>Use "Remember Me" if available</li>
             <li>Avoid clearing cookies frequently</li>
           </ul>
@@ -1071,3 +1071,4 @@ export const additionalHelpArticles = [
     readTime: '3 min read'
   },
 ];
+

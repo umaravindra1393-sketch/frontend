@@ -83,7 +83,7 @@ export const AuthProvider = ({ children }) => {
         setUser(null);
         setRole(null);
         setIsLoggingOut(false);
-        window.location.href = '/Zyndex/User/Log-In';
+        window.location.href = '/Learnx/User/Log-In';
       }
     }, 10000);
   };
@@ -159,3 +159,4 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
